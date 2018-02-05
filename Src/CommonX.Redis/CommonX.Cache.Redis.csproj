@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1</Version>
+    <Authors>withlin</Authors>
+    <Company>withlin</Company>
+    <Product>CommonX</Product>
+    <Description>Redis extension for CommonX</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0-preview1-25914-04" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
+</Project>

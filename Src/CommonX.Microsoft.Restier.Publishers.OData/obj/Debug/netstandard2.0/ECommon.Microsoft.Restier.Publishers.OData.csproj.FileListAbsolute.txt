@@ -1,0 +1,8 @@
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.deps.json
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.dll
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.pdb
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.dll
+D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Publishers.OData\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Publishers.OData.pdb

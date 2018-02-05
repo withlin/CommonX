@@ -1,0 +1,8 @@
+D:\自学\Company\ecommon\src\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\RemotingPerformanceTest.Server\obj\Debug\netcoreapp2.0\RemotingPerformanceTest.Server.AssemblyInfo.cs

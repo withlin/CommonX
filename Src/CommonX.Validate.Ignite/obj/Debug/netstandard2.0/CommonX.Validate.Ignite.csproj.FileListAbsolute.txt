@@ -1,0 +1,8 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\bin\Debug\netstandard2.0\CommonX.Validate.Ignite.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\bin\Debug\netstandard2.0\CommonX.Validate.Ignite.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\bin\Debug\netstandard2.0\CommonX.Validate.Ignite.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\obj\Debug\netstandard2.0\CommonX.Validate.Ignite.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\obj\Debug\netstandard2.0\CommonX.Validate.Ignite.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\obj\Debug\netstandard2.0\CommonX.Validate.Ignite.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\obj\Debug\netstandard2.0\CommonX.Validate.Ignite.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Validate.Ignite\obj\Debug\netstandard2.0\CommonX.Validate.Ignite.pdb

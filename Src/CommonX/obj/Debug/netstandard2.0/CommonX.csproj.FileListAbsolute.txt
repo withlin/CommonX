@@ -1,0 +1,10 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\obj\Debug\netstandard2.0\CommonX.Properties.Resources.resources
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\obj\Debug\netstandard2.0\CommonX.csproj.GenerateResource.Cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\obj\Debug\netstandard2.0\CommonX.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\obj\Debug\netstandard2.0\CommonX.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\obj\Debug\netstandard2.0\CommonX.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\bin\Debug\netstandard2.0\CommonX.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\bin\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\bin\Debug\netstandard2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\obj\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX\obj\Debug\netstandard2.0\CommonX.pdb

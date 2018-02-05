@@ -1,0 +1,4 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.Dapper\obj\Debug\netstandard2.0\CommonX.DataAccess.Dapper.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.Dapper\obj\Debug\netstandard2.0\CommonX.DataAccess.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.Dapper\obj\Debug\netstandard2.0\CommonX.DataAccess.Dapper.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.Dapper\obj\Debug\netstandard2.0\CommonX.DataAccess.Dapper.AssemblyInfo.cs

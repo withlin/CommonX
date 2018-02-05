@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1</Version>
+    <Description>Quartz extension for CommonX</Description>
+    <Authors>withlin</Authors>
+    <Company>withlin</Company>
+    <Product>CommonX</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Common.Logging" Version="3.4.1" />
+    <PackageReference Include="Quartz" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX.Autofac\CommonX.Autofac.csproj" />
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
+</Project>

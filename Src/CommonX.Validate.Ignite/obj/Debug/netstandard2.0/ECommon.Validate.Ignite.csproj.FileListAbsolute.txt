@@ -1,0 +1,8 @@
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\bin\Debug\netstandard2.0\ECommon.Validate.Ignite.deps.json
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\bin\Debug\netstandard2.0\ECommon.Validate.Ignite.dll
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\bin\Debug\netstandard2.0\ECommon.Validate.Ignite.pdb
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\obj\Debug\netstandard2.0\ECommon.Validate.Ignite.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\obj\Debug\netstandard2.0\ECommon.Validate.Ignite.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\obj\Debug\netstandard2.0\ECommon.Validate.Ignite.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\obj\Debug\netstandard2.0\ECommon.Validate.Ignite.dll
+D:\自学\Company\ecommon\src\ECommon.Validate.Ignite\obj\Debug\netstandard2.0\ECommon.Validate.Ignite.pdb

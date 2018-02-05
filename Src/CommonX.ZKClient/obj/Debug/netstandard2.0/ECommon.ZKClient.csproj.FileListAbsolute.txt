@@ -1,0 +1,3 @@
+D:\自学\Company\ecommon\src\ECommon.ZKClient\obj\Debug\netstandard2.0\ECommon.ZKClient.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.ZKClient\obj\Debug\netstandard2.0\ECommon.ZKClient.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.ZKClient\obj\Debug\netstandard2.0\ECommon.ZKClient.AssemblyInfo.cs

@@ -1,0 +1,4 @@
+D:\自学\Company\ecommon\src\ECommon.Autofac\obj\Debug\netstandard2.0\ECommon.Autofac.csprojResolveAssemblyReference.cache
+D:\自学\Company\ecommon\src\ECommon.Autofac\obj\Debug\netstandard2.0\ECommon.Autofac.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Autofac\obj\Debug\netstandard2.0\ECommon.Autofac.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Autofac\obj\Debug\netstandard2.0\ECommon.Autofac.AssemblyInfo.cs

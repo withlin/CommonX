@@ -1,0 +1,7 @@
+2018-02-04 12:33:03,382  INFO CommonX.Socketing.ServerSocket - Socket server is starting, listening on TCP endpoint: 127.0.0.1:5000.
+2018-02-04 12:33:04,389  INFO Program - Pushed server message: message:1
+2018-02-04 12:33:05,401  INFO Program - Pushed server message: message:2
+2018-02-04 12:33:06,401  INFO Program - Pushed server message: message:3
+2018-02-04 12:33:07,403  INFO Program - Pushed server message: message:4
+2018-02-04 12:33:08,404  INFO Program - Pushed server message: message:5
+2018-02-04 12:33:09,405  INFO Program - Pushed server message: message:6

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Version>2.5.2</Version>
+    <Authors>tangxuehua</Authors>
+    <Company>tangxuehua</Company>
+    <Product>ECommon</Product>
+    <Description>Log4Net extension for ECommon.</Description>
+    <PackageLicenseUrl>https://github.com/tangxuehua/ecommon/blob/master/license.txt</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/tangxuehua/ecommon.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/tangxuehua/ecommon</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\ECommon.Log4Net.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\bin\Debug\netstandard2.0\CommonX.Bpm.Model.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\bin\Debug\netstandard2.0\CommonX.Bpm.Model.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\bin\Debug\netstandard2.0\CommonX.Bpm.Model.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\obj\Debug\netstandard2.0\CommonX.Bpm.Model.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\obj\Debug\netstandard2.0\CommonX.Bpm.Model.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\obj\Debug\netstandard2.0\CommonX.Bpm.Model.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\obj\Debug\netstandard2.0\CommonX.Bpm.Model.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Bpm.Model\obj\Debug\netstandard2.0\CommonX.Bpm.Model.pdb

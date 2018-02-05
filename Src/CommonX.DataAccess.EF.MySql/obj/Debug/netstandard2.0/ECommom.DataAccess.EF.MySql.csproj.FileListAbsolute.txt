@@ -1,0 +1,8 @@
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.deps.json
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.dll
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.pdb
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.dll
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.MySql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.MySql.pdb

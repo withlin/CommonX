@@ -1,0 +1,8 @@
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\bin\Debug\netstandard2.0\ECommon.Bpm.Engine.deps.json
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\bin\Debug\netstandard2.0\ECommon.Bpm.Engine.dll
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\bin\Debug\netstandard2.0\ECommon.Bpm.Engine.pdb
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\obj\Debug\netstandard2.0\ECommon.Bpm.Engine.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\obj\Debug\netstandard2.0\ECommon.Bpm.Engine.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\obj\Debug\netstandard2.0\ECommon.Bpm.Engine.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\obj\Debug\netstandard2.0\ECommon.Bpm.Engine.dll
+D:\自学\Company\ecommon\src\ECommon.Bpm.Engine\obj\Debug\netstandard2.0\ECommon.Bpm.Engine.pdb

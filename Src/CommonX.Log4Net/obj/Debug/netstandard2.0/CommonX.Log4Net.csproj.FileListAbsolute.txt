@@ -1,0 +1,11 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\obj\Debug\netstandard2.0\CommonX.Log4Net.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\obj\Debug\netstandard2.0\CommonX.Log4Net.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\obj\Debug\netstandard2.0\CommonX.Log4Net.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\obj\Debug\netstandard2.0\CommonX.Log4Net.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\bin\Debug\netstandard2.0\CommonX.Log4Net.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\bin\Debug\netstandard2.0\CommonX.Log4Net.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\bin\Debug\netstandard2.0\CommonX.Log4Net.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\bin\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\bin\Debug\netstandard2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\obj\Debug\netstandard2.0\CommonX.Log4Net.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Log4Net\obj\Debug\netstandard2.0\CommonX.Log4Net.pdb

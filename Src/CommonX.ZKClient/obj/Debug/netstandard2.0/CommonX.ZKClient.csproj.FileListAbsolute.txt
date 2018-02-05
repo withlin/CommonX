@@ -1,0 +1,10 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\obj\Debug\netstandard2.0\CommonX.ZKClient.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\obj\Debug\netstandard2.0\CommonX.ZKClient.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\obj\Debug\netstandard2.0\CommonX.ZKClient.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\bin\Debug\netstandard2.0\CommonX.ZKClient.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\bin\Debug\netstandard2.0\CommonX.ZKClient.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\bin\Debug\netstandard2.0\CommonX.ZKClient.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\bin\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\bin\Debug\netstandard2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\obj\Debug\netstandard2.0\CommonX.ZKClient.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ZKClient\obj\Debug\netstandard2.0\CommonX.ZKClient.pdb

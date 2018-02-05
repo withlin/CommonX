@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Impl\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.1\build\netstandard2.0\ref\netstandard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

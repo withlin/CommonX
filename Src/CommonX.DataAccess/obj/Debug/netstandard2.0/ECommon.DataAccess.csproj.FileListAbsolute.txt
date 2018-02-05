@@ -1,0 +1,9 @@
+D:\自学\Company\ecommon\src\ECommon.DataAccess\bin\Debug\netstandard2.0\ECommon.DataAccess.deps.json
+D:\自学\Company\ecommon\src\ECommon.DataAccess\bin\Debug\netstandard2.0\ECommon.DataAccess.dll
+D:\自学\Company\ecommon\src\ECommon.DataAccess\bin\Debug\netstandard2.0\ECommon.DataAccess.pdb
+D:\自学\Company\ecommon\src\ECommon.DataAccess\obj\Debug\netstandard2.0\ECommon.DataAccess.csprojResolveAssemblyReference.cache
+D:\自学\Company\ecommon\src\ECommon.DataAccess\obj\Debug\netstandard2.0\ECommon.DataAccess.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.DataAccess\obj\Debug\netstandard2.0\ECommon.DataAccess.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.DataAccess\obj\Debug\netstandard2.0\ECommon.DataAccess.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommon.DataAccess\obj\Debug\netstandard2.0\ECommon.DataAccess.dll
+D:\自学\Company\ecommon\src\ECommon.DataAccess\obj\Debug\netstandard2.0\ECommon.DataAccess.pdb

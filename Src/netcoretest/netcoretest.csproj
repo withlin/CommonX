@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX.Autofac\CommonX.Autofac.csproj" />
+    <ProjectReference Include="..\CommonX.JsonNet\CommonX.JsonNet.csproj" />
+    <ProjectReference Include="..\CommonX.Log4Net\CommonX.Log4Net.csproj" />
+    <ProjectReference Include="..\CommonX.ServiceBus.MassTransit\CommonX.ServiceBus.MassTransit.csproj" />
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\ServiceBus.Test.Publish\bin\Debug\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Extras.DynamicProxy">
+      <HintPath>..\ServiceBus.Test.Publish\bin\Debug\Autofac.Extras.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ServiceBus.Test.Publish\bin\Debug\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\ServiceBus.Test.Publish\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit">
+      <HintPath>..\ServiceBus.Test.Publish\bin\Debug\MassTransit.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.AutofacIntegration">
+      <HintPath>..\ServiceBus.Test.Publish\bin\Debug\MassTransit.AutofacIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="MassTransit.RabbitMqTransport">
+      <HintPath>..\ServiceBus.Test.Publish\bin\Debug\MassTransit.RabbitMqTransport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

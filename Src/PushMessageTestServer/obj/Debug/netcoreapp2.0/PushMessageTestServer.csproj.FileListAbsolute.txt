@@ -1,0 +1,27 @@
+D:\自学\Company\ecommon\src\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.csprojResolveAssemblyReference.cache
+D:\自学\Company\ecommon\src\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\log4net.config
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\PushMessageTestServer.dll.config
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\PushMessageTestServer.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\PushMessageTestServer.runtimeconfig.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\PushMessageTestServer.runtimeconfig.dev.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\PushMessageTestServer.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\PushMessageTestServer.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.Autofac.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.Dapper.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.JsonNet.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.Log4Net.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.Autofac.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.Dapper.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.JsonNet.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.Log4Net.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\bin\Debug\netcoreapp2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\PushMessageTestServer\obj\Debug\netcoreapp2.0\PushMessageTestServer.pdb

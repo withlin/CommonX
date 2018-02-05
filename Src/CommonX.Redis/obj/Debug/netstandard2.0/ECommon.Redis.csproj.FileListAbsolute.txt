@@ -1,0 +1,11 @@
+D:\自学\Company\ecommon\src\ECommon.Redis\bin\Debug\netstandard2.0\ECommon.Redis.deps.json
+D:\自学\Company\ecommon\src\ECommon.Redis\bin\Debug\netstandard2.0\ECommon.Redis.dll
+D:\自学\Company\ecommon\src\ECommon.Redis\bin\Debug\netstandard2.0\ECommon.Redis.pdb
+D:\自学\Company\ecommon\src\ECommon.Redis\bin\Debug\netstandard2.0\ECommon.dll
+D:\自学\Company\ecommon\src\ECommon.Redis\bin\Debug\netstandard2.0\ECommon.pdb
+D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Redis.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Redis.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Redis.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Redis.dll
+D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Redis.pdb
+D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Redis.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\bin\Debug\netstandard2.0\CommonX.Dapper.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\bin\Debug\netstandard2.0\CommonX.Dapper.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\bin\Debug\netstandard2.0\CommonX.Dapper.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\obj\Debug\netstandard2.0\CommonX.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\obj\Debug\netstandard2.0\CommonX.Dapper.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\obj\Debug\netstandard2.0\CommonX.Dapper.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\obj\Debug\netstandard2.0\CommonX.Dapper.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Dapper\obj\Debug\netstandard2.0\CommonX.Dapper.pdb

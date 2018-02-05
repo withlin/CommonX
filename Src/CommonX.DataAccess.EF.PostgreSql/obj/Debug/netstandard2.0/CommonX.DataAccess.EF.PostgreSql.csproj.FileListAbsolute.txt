@@ -1,0 +1,8 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.PostgreSql.pdb

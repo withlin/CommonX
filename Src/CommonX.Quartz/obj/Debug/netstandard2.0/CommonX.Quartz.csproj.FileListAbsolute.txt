@@ -1,0 +1,13 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\obj\Debug\netstandard2.0\CommonX.Quartz.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\obj\Debug\netstandard2.0\CommonX.Quartz.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\obj\Debug\netstandard2.0\CommonX.Quartz.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\obj\Debug\netstandard2.0\CommonX.Quartz.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\bin\Debug\netstandard2.0\CommonX.Quartz.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\bin\Debug\netstandard2.0\CommonX.Quartz.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\bin\Debug\netstandard2.0\CommonX.Quartz.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\bin\Debug\netstandard2.0\CommonX.Autofac.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\bin\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\bin\Debug\netstandard2.0\CommonX.Autofac.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\bin\Debug\netstandard2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\obj\Debug\netstandard2.0\CommonX.Quartz.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Quartz\obj\Debug\netstandard2.0\CommonX.Quartz.pdb

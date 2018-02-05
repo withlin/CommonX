@@ -1,0 +1,9 @@
+D:\自学\Company\ecommon\src\ECommon.Dapper\bin\Debug\netstandard2.0\ECommon.Dapper.deps.json
+D:\自学\Company\ecommon\src\ECommon.Dapper\bin\Debug\netstandard2.0\ECommon.Dapper.dll
+D:\自学\Company\ecommon\src\ECommon.Dapper\bin\Debug\netstandard2.0\ECommon.Dapper.pdb
+D:\自学\Company\ecommon\src\ECommon.Dapper\obj\Debug\netstandard2.0\ECommon.Dapper.csprojResolveAssemblyReference.cache
+D:\自学\Company\ecommon\src\ECommon.Dapper\obj\Debug\netstandard2.0\ECommon.Dapper.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Dapper\obj\Debug\netstandard2.0\ECommon.Dapper.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.Dapper\obj\Debug\netstandard2.0\ECommon.Dapper.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommon.Dapper\obj\Debug\netstandard2.0\ECommon.Dapper.dll
+D:\自学\Company\ecommon\src\ECommon.Dapper\obj\Debug\netstandard2.0\ECommon.Dapper.pdb

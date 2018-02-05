@@ -1,0 +1,8 @@
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\bin\Debug\netstandard2.0\ECommon.ElasticSearch.deps.json
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\bin\Debug\netstandard2.0\ECommon.ElasticSearch.dll
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\bin\Debug\netstandard2.0\ECommon.ElasticSearch.pdb
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\obj\Debug\netstandard2.0\ECommon.ElasticSearch.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\obj\Debug\netstandard2.0\ECommon.ElasticSearch.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\obj\Debug\netstandard2.0\ECommon.ElasticSearch.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\obj\Debug\netstandard2.0\ECommon.ElasticSearch.dll
+D:\自学\Company\ecommon\src\ECommon.ElasticSearch\obj\Debug\netstandard2.0\ECommon.ElasticSearch.pdb

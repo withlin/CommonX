@@ -1,0 +1,11 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\obj\Debug\netstandard2.0\CommonX.Cache.Redis.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\obj\Debug\netstandard2.0\CommonX.Cache.Redis.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\obj\Debug\netstandard2.0\CommonX.Cache.Redis.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\obj\Debug\netstandard2.0\CommonX.Cache.Redis.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\bin\Debug\netstandard2.0\CommonX.Cache.Redis.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\bin\Debug\netstandard2.0\CommonX.Cache.Redis.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\bin\Debug\netstandard2.0\CommonX.Cache.Redis.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\bin\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\bin\Debug\netstandard2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\obj\Debug\netstandard2.0\CommonX.Cache.Redis.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Redis\obj\Debug\netstandard2.0\CommonX.Cache.Redis.pdb

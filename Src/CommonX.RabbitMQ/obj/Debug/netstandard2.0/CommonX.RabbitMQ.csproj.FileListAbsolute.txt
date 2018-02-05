@@ -1,0 +1,10 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\obj\Debug\netstandard2.0\CommonX.RabbitMQ.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\obj\Debug\netstandard2.0\CommonX.RabbitMQ.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\obj\Debug\netstandard2.0\CommonX.RabbitMQ.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\bin\Debug\netstandard2.0\CommonX.RabbitMQ.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\bin\Debug\netstandard2.0\CommonX.RabbitMQ.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\bin\Debug\netstandard2.0\CommonX.RabbitMQ.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\bin\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\bin\Debug\netstandard2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\obj\Debug\netstandard2.0\CommonX.RabbitMQ.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.RabbitMQ\obj\Debug\netstandard2.0\CommonX.RabbitMQ.pdb

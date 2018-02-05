@@ -1,0 +1,8 @@
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.deps.json
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.dll
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.pdb
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.csproj.CoreCompileInputs.cache
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.AssemblyInfoInputs.cache
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.AssemblyInfo.cs
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.dll
+D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.Bpm\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.Bpm.pdb

@@ -1,0 +1,11 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\obj\Debug\netstandard2.0\CommonX.JsonNet.csprojResolveAssemblyReference.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\obj\Debug\netstandard2.0\CommonX.JsonNet.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\obj\Debug\netstandard2.0\CommonX.JsonNet.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\obj\Debug\netstandard2.0\CommonX.JsonNet.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\bin\Debug\netstandard2.0\CommonX.JsonNet.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\bin\Debug\netstandard2.0\CommonX.JsonNet.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\bin\Debug\netstandard2.0\CommonX.JsonNet.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\bin\Debug\netstandard2.0\CommonX.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\bin\Debug\netstandard2.0\CommonX.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\obj\Debug\netstandard2.0\CommonX.JsonNet.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.JsonNet\obj\Debug\netstandard2.0\CommonX.JsonNet.pdb

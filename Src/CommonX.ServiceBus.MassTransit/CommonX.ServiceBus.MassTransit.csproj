@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="4.0.1" />
+    <PackageReference Include="MassTransit.Autofac" Version="4.0.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX.Autofac\CommonX.Autofac.csproj" />
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MassTransit.RabbitMqTransport">
+      <HintPath>..\Lib\MassTransit.RabbitMqTransport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

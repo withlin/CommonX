@@ -1,0 +1,8 @@
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\bin\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.deps.json
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\bin\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\bin\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.pdb
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\obj\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.csproj.CoreCompileInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\obj\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.AssemblyInfoInputs.cache
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\obj\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.AssemblyInfo.cs
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\obj\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.dll
+C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Microsoft.Restier.Core\obj\Debug\netstandard2.0\CommonX.Microsoft.Restier.Core.pdb

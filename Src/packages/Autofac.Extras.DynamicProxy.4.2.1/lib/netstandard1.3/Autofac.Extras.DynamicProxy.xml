@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Autofac.Extras.DynamicProxy</name>
+    </assembly>
+    <members>
+        <member name="T:Autofac.Extras.DynamicProxy.InterceptAttribute">
+            <summary>
+            Indicates that a type should be intercepted.
+            </summary>
+        </member>
+        <member name="P:Autofac.Extras.DynamicProxy.InterceptAttribute.InterceptorService">
+            <summary>
+            Gets the interceptor service.
+            </summary>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.InterceptAttribute.#ctor(Autofac.Core.Service)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Extras.DynamicProxy.InterceptAttribute"/> class.
+            </summary>
+            <param name="interceptorService">The interceptor service.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown if <paramref name="interceptorService" /> is <see langword="null" />.
+            </exception>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.InterceptAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Extras.DynamicProxy.InterceptAttribute"/> class.
+            </summary>
+            <param name="interceptorServiceName">Name of the interceptor service.</param>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.InterceptAttribute.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Autofac.Extras.DynamicProxy.InterceptAttribute"/> class.
+            </summary>
+            <param name="interceptorServiceType">The typed interceptor service.</param>
+        </member>
+        <member name="T:Autofac.Extras.DynamicProxy.RegistrationExtensions">
+            <summary>
+            Adds registration syntax to the <see cref="T:Autofac.ContainerBuilder"/> type.
+            </summary>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``2(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Features.Scanning.ScanningActivatorData,``1})">
+            <summary>
+            Enable class interception on the target type. Interceptors will be determined
+            via Intercept attributes on the class or added with InterceptedBy().
+            Only virtual methods can be intercepted this way.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TRegistrationStyle">Registration style.</typeparam>
+            <param name="registration">Registration to apply interception to.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})">
+            <summary>
+            Enable class interception on the target type. Interceptors will be determined
+            via Intercept attributes on the class or added with InterceptedBy().
+            Only virtual methods can be intercepted this way.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TConcreteReflectionActivatorData">Activator data type.</typeparam>
+            <typeparam name="TRegistrationStyle">Registration style.</typeparam>
+            <param name="registration">Registration to apply interception to.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``2(Autofac.Builder.IRegistrationBuilder{``0,Autofac.Features.Scanning.ScanningActivatorData,``1},Castle.DynamicProxy.ProxyGenerationOptions,System.Type[])">
+            <summary>
+            Enable class interception on the target type. Interceptors will be determined
+            via Intercept attributes on the class or added with InterceptedBy().
+            Only virtual methods can be intercepted this way.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TRegistrationStyle">Registration style.</typeparam>
+            <param name="registration">Registration to apply interception to.</param>
+            <param name="options">Proxy generation options to apply.</param>
+            <param name="additionalInterfaces">Additional interface types. Calls to their members will be proxied as well.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableClassInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions,System.Type[])">
+            <summary>
+            Enable class interception on the target type. Interceptors will be determined
+            via Intercept attributes on the class or added with InterceptedBy().
+            Only virtual methods can be intercepted this way.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TConcreteReflectionActivatorData">Activator data type.</typeparam>
+            <typeparam name="TRegistrationStyle">Registration style.</typeparam>
+            <param name="registration">Registration to apply interception to.</param>
+            <param name="options">Proxy generation options to apply.</param>
+            <param name="additionalInterfaces">Additional interface types. Calls to their members will be proxied as well.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2})">
+            <summary>
+            Enable interface interception on the target type. Interceptors will be determined
+            via Intercept attributes on the class or interface, or added with InterceptedBy() calls.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TSingleRegistrationStyle">Registration style.</typeparam>
+            <param name="registration">Registration to apply interception to.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.EnableInterfaceInterceptors``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Castle.DynamicProxy.ProxyGenerationOptions)">
+            <summary>
+            Enable interface interception on the target type. Interceptors will be determined
+            via Intercept attributes on the class or interface, or added with InterceptedBy() calls.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TSingleRegistrationStyle">Registration style.</typeparam>
+            <param name="registration">Registration to apply interception to.</param>
+            <param name="options">Proxy generation options to apply.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},Autofac.Core.Service[])">
+            <summary>
+            Allows a list of interceptor services to be assigned to the registration.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TStyle">Registration style.</typeparam>
+            <param name="builder">Registration to apply interception to.</param>
+            <param name="interceptorServices">The interceptor services.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+            <exception cref="T:System.ArgumentNullException">builder or interceptorServices</exception>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.String[])">
+            <summary>
+            Allows a list of interceptor services to be assigned to the registration.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TStyle">Registration style.</typeparam>
+            <param name="builder">Registration to apply interception to.</param>
+            <param name="interceptorServiceNames">The names of the interceptor services.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+            <exception cref="T:System.ArgumentNullException">builder or interceptorServices</exception>
+        </member>
+        <member name="M:Autofac.Extras.DynamicProxy.RegistrationExtensions.InterceptedBy``3(Autofac.Builder.IRegistrationBuilder{``0,``1,``2},System.Type[])">
+            <summary>
+            Allows a list of interceptor services to be assigned to the registration.
+            </summary>
+            <typeparam name="TLimit">Registration limit type.</typeparam>
+            <typeparam name="TActivatorData">Activator data type.</typeparam>
+            <typeparam name="TStyle">Registration style.</typeparam>
+            <param name="builder">Registration to apply interception to.</param>
+            <param name="interceptorServiceTypes">The types of the interceptor services.</param>
+            <returns>Registration builder allowing the registration to be configured.</returns>
+            <exception cref="T:System.ArgumentNullException">builder or interceptorServices</exception>
+        </member>
+        <member name="T:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources.InterfaceNotSupportedByTransparentProxy">
+            <summary>
+              Looks up a localized string similar to The transparent proxy does not support the additional interface(s): {0}..
+            </summary>
+        </member>
+        <member name="P:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources.InterfaceProxyingOnlySupportsInterfaceServices">
+            <summary>
+              Looks up a localized string similar to The component {0} cannot use interface interception as it provides services that are not publicly visible interfaces. Check your registration of the component to ensure you&apos;re not enabling interception and registering it as an internal/private interface type..
+            </summary>
+        </member>
+        <member name="P:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources.TransparentProxyIsNotInterface">
+            <summary>
+              Looks up a localized string similar to The transparent proxy of type &apos;{0}&apos; must be an interface..
+            </summary>
+        </member>
+        <member name="P:Autofac.Extras.DynamicProxy.RegistrationExtensionsResources.TypeIsNotTransparentProxy">
+            <summary>
+              Looks up a localized string similar to The instance of type &apos;{0}&apos; is not a transparent proxy..
+            </summary>
+        </member>
+    </members>
+</doc>
