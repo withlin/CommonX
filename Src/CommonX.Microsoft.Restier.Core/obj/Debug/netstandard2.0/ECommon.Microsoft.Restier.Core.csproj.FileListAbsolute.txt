@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.deps.json
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.dll
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.pdb
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.dll
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Core\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Core.pdb

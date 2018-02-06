@@ -1,8 +1,0 @@
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\bin\Debug\netstandard2.0\CommonX.Config.Entities.deps.json
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\bin\Debug\netstandard2.0\CommonX.Config.Entities.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\bin\Debug\netstandard2.0\CommonX.Config.Entities.pdb
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\obj\Debug\netstandard2.0\CommonX.Config.Entities.csproj.CoreCompileInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\obj\Debug\netstandard2.0\CommonX.Config.Entities.AssemblyInfoInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\obj\Debug\netstandard2.0\CommonX.Config.Entities.AssemblyInfo.cs
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\obj\Debug\netstandard2.0\CommonX.Config.Entities.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.Config.Entities\obj\Debug\netstandard2.0\CommonX.Config.Entities.pdb

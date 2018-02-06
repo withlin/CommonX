@@ -1,4 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Cache.Redis.csprojResolveAssemblyReference.cache
-D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Cache.Redis.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Cache.Redis.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Redis\obj\Debug\netstandard2.0\ECommon.Cache.Redis.AssemblyInfo.cs

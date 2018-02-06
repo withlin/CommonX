@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.Kafka\bin\Debug\netstandard2.0\ECommon.Kafka.deps.json
-D:\自学\Company\ecommon\src\ECommon.Kafka\bin\Debug\netstandard2.0\ECommon.Kafka.dll
-D:\自学\Company\ecommon\src\ECommon.Kafka\bin\Debug\netstandard2.0\ECommon.Kafka.pdb
-D:\自学\Company\ecommon\src\ECommon.Kafka\obj\Debug\netstandard2.0\ECommon.Kafka.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Kafka\obj\Debug\netstandard2.0\ECommon.Kafka.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Kafka\obj\Debug\netstandard2.0\ECommon.Kafka.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.Kafka\obj\Debug\netstandard2.0\ECommon.Kafka.dll
-D:\自学\Company\ecommon\src\ECommon.Kafka\obj\Debug\netstandard2.0\ECommon.Kafka.pdb

@@ -1,5 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.Quartz\obj\Debug\netstandard2.0\ECommon.Quartz.csprojResolveAssemblyReference.cache
-D:\自学\Company\ecommon\src\ECommon.Quartz\obj\Debug\netstandard2.0\ECommon.Quartz.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Quartz\obj\Debug\netstandard2.0\ECommon.Quartz.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Quartz\obj\Debug\netstandard2.0\ECommon.Quartz.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.Quartz\bin\Debug\netstandard2.0\ECommon.dll

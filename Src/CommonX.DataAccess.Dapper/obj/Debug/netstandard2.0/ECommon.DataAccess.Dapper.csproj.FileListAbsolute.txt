@@ -1,9 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\bin\Debug\netstandard2.0\ECommon.DataAccess.Dapper.deps.json
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\bin\Debug\netstandard2.0\ECommon.DataAccess.Dapper.dll
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\bin\Debug\netstandard2.0\ECommon.DataAccess.Dapper.pdb
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\obj\Debug\netstandard2.0\ECommon.DataAccess.Dapper.csprojResolveAssemblyReference.cache
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\obj\Debug\netstandard2.0\ECommon.DataAccess.Dapper.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\obj\Debug\netstandard2.0\ECommon.DataAccess.Dapper.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\obj\Debug\netstandard2.0\ECommon.DataAccess.Dapper.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\obj\Debug\netstandard2.0\ECommon.DataAccess.Dapper.dll
-D:\自学\Company\ecommon\src\ECommon.DataAccess.Dapper\obj\Debug\netstandard2.0\ECommon.DataAccess.Dapper.pdb

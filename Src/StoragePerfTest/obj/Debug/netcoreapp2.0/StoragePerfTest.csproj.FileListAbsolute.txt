@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.csprojResolveAssemblyReference.cache
-D:\自学\Company\ecommon\src\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.AssemblyInfo.cs
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.csprojResolveAssemblyReference.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.csproj.CoreCompileInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.AssemblyInfoInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\StoragePerfTest\obj\Debug\netcoreapp2.0\StoragePerfTest.AssemblyInfo.cs

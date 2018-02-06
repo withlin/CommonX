@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.deps.json
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.dll
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\bin\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.pdb
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.dll
-D:\自学\Company\ecommon\src\ECommom.DataAccess.EF.PostgreSql\obj\Debug\netstandard2.0\ECommom.DataAccess.EF.PostgreSql.pdb

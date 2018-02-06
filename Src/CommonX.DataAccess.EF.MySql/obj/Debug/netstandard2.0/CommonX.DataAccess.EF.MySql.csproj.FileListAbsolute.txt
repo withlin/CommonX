@@ -1,8 +1,0 @@
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.deps.json
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.pdb
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.csproj.CoreCompileInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.AssemblyInfoInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.AssemblyInfo.cs
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.DataAccess.EF.MySql\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.MySql.pdb

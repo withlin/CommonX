@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\bin\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.deps.json
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\bin\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.dll
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\bin\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.pdb
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\obj\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\obj\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\obj\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\obj\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.dll
-D:\自学\Company\ecommon\src\ECommon.ServiceBus.MassTransit\obj\Debug\netstandard2.0\ECommon.ServiceBus.MassTransit.pdb

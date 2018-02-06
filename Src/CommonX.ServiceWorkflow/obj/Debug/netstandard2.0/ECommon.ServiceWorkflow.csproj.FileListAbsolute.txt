@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\bin\Debug\netstandard2.0\ECommon.ServiceWorkflow.deps.json
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\bin\Debug\netstandard2.0\ECommon.ServiceWorkflow.dll
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\bin\Debug\netstandard2.0\ECommon.ServiceWorkflow.pdb
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\obj\Debug\netstandard2.0\ECommon.ServiceWorkflow.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\obj\Debug\netstandard2.0\ECommon.ServiceWorkflow.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\obj\Debug\netstandard2.0\ECommon.ServiceWorkflow.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\obj\Debug\netstandard2.0\ECommon.ServiceWorkflow.dll
-D:\自学\Company\ecommon\src\ECommon.ServiceWorkflow\obj\Debug\netstandard2.0\ECommon.ServiceWorkflow.pdb

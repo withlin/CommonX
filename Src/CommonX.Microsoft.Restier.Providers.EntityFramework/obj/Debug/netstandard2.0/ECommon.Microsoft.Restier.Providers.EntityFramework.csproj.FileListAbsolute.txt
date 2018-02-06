@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.deps.json
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.dll
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\bin\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.pdb
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.dll
-D:\自学\Company\ecommon\src\ECommon.Microsoft.Restier.Providers.EntityFramework\obj\Debug\netstandard2.0\ECommon.Microsoft.Restier.Providers.EntityFramework.pdb

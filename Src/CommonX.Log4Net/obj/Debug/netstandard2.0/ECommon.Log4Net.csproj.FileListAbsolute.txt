@@ -1,4 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.Log4Net\obj\Debug\netstandard2.0\ECommon.Log4Net.csprojResolveAssemblyReference.cache
-D:\自学\Company\ecommon\src\ECommon.Log4Net\obj\Debug\netstandard2.0\ECommon.Log4Net.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Log4Net\obj\Debug\netstandard2.0\ECommon.Log4Net.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Log4Net\obj\Debug\netstandard2.0\ECommon.Log4Net.AssemblyInfo.cs

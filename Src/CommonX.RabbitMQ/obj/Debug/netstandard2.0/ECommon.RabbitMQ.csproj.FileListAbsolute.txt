@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\bin\Debug\netstandard2.0\ECommon.RabbitMQ.deps.json
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\bin\Debug\netstandard2.0\ECommon.RabbitMQ.dll
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\bin\Debug\netstandard2.0\ECommon.RabbitMQ.pdb
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\obj\Debug\netstandard2.0\ECommon.RabbitMQ.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\obj\Debug\netstandard2.0\ECommon.RabbitMQ.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\obj\Debug\netstandard2.0\ECommon.RabbitMQ.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\obj\Debug\netstandard2.0\ECommon.RabbitMQ.dll
-D:\自学\Company\ecommon\src\ECommon.RabbitMQ\obj\Debug\netstandard2.0\ECommon.RabbitMQ.pdb

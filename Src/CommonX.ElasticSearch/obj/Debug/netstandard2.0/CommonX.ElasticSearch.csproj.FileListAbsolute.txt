@@ -1,8 +1,0 @@
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\bin\Debug\netstandard2.0\CommonX.ElasticSearch.deps.json
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\bin\Debug\netstandard2.0\CommonX.ElasticSearch.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\bin\Debug\netstandard2.0\CommonX.ElasticSearch.pdb
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\obj\Debug\netstandard2.0\CommonX.ElasticSearch.csproj.CoreCompileInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\obj\Debug\netstandard2.0\CommonX.ElasticSearch.AssemblyInfoInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\obj\Debug\netstandard2.0\CommonX.ElasticSearch.AssemblyInfo.cs
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\obj\Debug\netstandard2.0\CommonX.ElasticSearch.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ElasticSearch\obj\Debug\netstandard2.0\CommonX.ElasticSearch.pdb

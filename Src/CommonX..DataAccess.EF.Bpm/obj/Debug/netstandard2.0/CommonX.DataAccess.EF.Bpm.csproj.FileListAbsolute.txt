@@ -1,8 +1,0 @@
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.deps.json
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\bin\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.pdb
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.csproj.CoreCompileInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.AssemblyInfoInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.AssemblyInfo.cs
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX..DataAccess.EF.Bpm\obj\Debug\netstandard2.0\CommonX.DataAccess.EF.Bpm.pdb

@@ -1,8 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\bin\Debug\netstandard2.0\ECommon.DataAccess.EF.deps.json
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\bin\Debug\netstandard2.0\ECommon.DataAccess.EF.dll
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\bin\Debug\netstandard2.0\ECommon.DataAccess.EF.pdb
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\obj\Debug\netstandard2.0\ECommon.DataAccess.EF.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\obj\Debug\netstandard2.0\ECommon.DataAccess.EF.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\obj\Debug\netstandard2.0\ECommon.DataAccess.EF.AssemblyInfo.cs
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\obj\Debug\netstandard2.0\ECommon.DataAccess.EF.dll
-D:\自学\Company\ecommon\src\ECommon.DataAccess.EF\obj\Debug\netstandard2.0\ECommon.DataAccess.EF.pdb

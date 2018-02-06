@@ -1,4 +1,0 @@
-D:\自学\Company\ecommon\src\ECommon.Ignite\obj\Debug\netstandard2.0\ECommon.Cache.Ignite.csprojResolveAssemblyReference.cache
-D:\自学\Company\ecommon\src\ECommon.Ignite\obj\Debug\netstandard2.0\ECommon.Cache.Ignite.csproj.CoreCompileInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Ignite\obj\Debug\netstandard2.0\ECommon.Cache.Ignite.AssemblyInfoInputs.cache
-D:\自学\Company\ecommon\src\ECommon.Ignite\obj\Debug\netstandard2.0\ECommon.Cache.Ignite.AssemblyInfo.cs

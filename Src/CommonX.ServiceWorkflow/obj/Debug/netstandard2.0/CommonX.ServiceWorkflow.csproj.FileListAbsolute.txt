@@ -1,8 +1,0 @@
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\bin\Debug\netstandard2.0\CommonX.ServiceWorkflow.deps.json
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\bin\Debug\netstandard2.0\CommonX.ServiceWorkflow.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\bin\Debug\netstandard2.0\CommonX.ServiceWorkflow.pdb
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\obj\Debug\netstandard2.0\CommonX.ServiceWorkflow.csproj.CoreCompileInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\obj\Debug\netstandard2.0\CommonX.ServiceWorkflow.AssemblyInfoInputs.cache
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\obj\Debug\netstandard2.0\CommonX.ServiceWorkflow.AssemblyInfo.cs
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\obj\Debug\netstandard2.0\CommonX.ServiceWorkflow.dll
-C:\Users\WithLin\Documents\Visual Studio 2017\Projects\CommonX\CommonX.ServiceWorkflow\obj\Debug\netstandard2.0\CommonX.ServiceWorkflow.pdb
