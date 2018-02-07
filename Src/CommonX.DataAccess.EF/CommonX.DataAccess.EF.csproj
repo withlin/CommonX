@@ -7,10 +7,11 @@
   <Import Project="..\CommonX.DataAccess.EF.Shared\ECommon.DataAccess.EF.Shared.projitems" Label="Shared" />
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CommonX.DataAccess\CommonX.DataAccess.csproj" />
     <ProjectReference Include="..\CommonX\CommonX.csproj" />
   </ItemGroup>
 
