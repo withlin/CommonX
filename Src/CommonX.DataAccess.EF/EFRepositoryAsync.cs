@@ -61,12 +61,12 @@ namespace CommonX.DataAccess.EF
 
         public override Task<TEntity> GetAsync(TKey id)
         {
-            throw new NotImplementedException();
+            return DbSet.FindAsync(id);
         }
 
         public override Task<TEntity> SingleAsync(Expression<Func<TEntity, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return DbSet.SingleAsync(predicate);
         }
 
         public override Task UpdateAsync(TEntity entity)

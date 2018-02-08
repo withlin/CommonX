@@ -12,7 +12,7 @@ namespace CommonX.DataAccess.EF
 {
     public partial class EfRepository<TEntity, TKey> : BaseRepository<TEntity, TKey> where TEntity : class, new()
     {
-        readonly string _connectionString = ConfigurationManager.ConnectionStrings["OracleDbContext"].ConnectionString;
+        readonly string _connectionString = ConfigurationManager.ConnectionStrings["SqlServerDbContext"].ConnectionString;
         private static readonly object _lockObj = new object();
         protected readonly DbContext DbContext;
         protected IQueryable<TEntity> DbQuery;
