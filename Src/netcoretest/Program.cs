@@ -58,8 +58,8 @@ namespace netcoretest
             var config = Configuration.Create()
                 .UseAutofac()
                 .RegisterCommonComponents()
-                .UseLog4Net();
-            config.UseMassTransit(new[] { assambly });
+                .UseLog4Net()
+                .UseMassTransit(new[] { assambly });
             var objectContainer = new AutofacObjectContainer();
             _logger = ObjectContainer.Current.BeginLifetimeScope().Resolve<ILoggerFactory>().Create(typeof(Program).Name);
             var log = ObjectContainer.Current.BeginLifetimeScope();

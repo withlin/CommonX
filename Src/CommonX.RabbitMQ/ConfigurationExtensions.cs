@@ -1,5 +1,5 @@
 ﻿
-namespace Shared.MiddleWare.RabbitMQ
+namespace CommonX.RabbitMQ
 {
     using CommonX.Components;
     using CommonX.Configurations;

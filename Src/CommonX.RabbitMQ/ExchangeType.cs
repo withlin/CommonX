@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shared.MiddleWare.RabbitMQ
+namespace CommonX.RabbitMQ
 {
     /// <summary>
     /// 路由枚举

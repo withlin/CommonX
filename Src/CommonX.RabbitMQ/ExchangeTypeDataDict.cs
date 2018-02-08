@@ -1,6 +1,6 @@
 ﻿
 
-namespace Shared.MiddleWare.RabbitMQ
+namespace CommonX.RabbitMQ
 {
     using global::RabbitMQ.Client;
     using System.Collections.Generic;

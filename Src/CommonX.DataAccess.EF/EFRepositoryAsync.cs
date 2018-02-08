@@ -26,7 +26,7 @@ namespace CommonX.DataAccess.EF
         public override Task DeleteAllAsync()
         {
             throw new NotImplementedException();
-        }
+        } 
 
         public override Task DeleteAsync(TKey id)
         {

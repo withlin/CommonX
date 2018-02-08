@@ -115,7 +115,7 @@ namespace CommonX.DataAccess.EF
             }
 
             _transaction = _context.Database.BeginTransaction(isolationLevel);
-        }
+        } 
 
         [Obsolete("use TransactionScope  instead")]
         public bool Commit()

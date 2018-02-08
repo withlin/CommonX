@@ -96,7 +96,7 @@ namespace CommonX.DataAccess.EF
             }
             return DbQuery.Where(predicate).OrderBy(orderBy).Skip((page - 1) * pageSize).Take(pageSize).AsNoTracking();
         }
-
+         
         
 
         public override TEntity First(Expression<Func<TEntity, bool>> predicate)

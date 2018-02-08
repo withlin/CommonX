@@ -1,5 +1,5 @@
 ﻿
-namespace Shared.MiddleWare.RabbitMQ
+namespace CommonX.RabbitMQ
 {
     using CommonX.Logging;
     using CommonX.Serializing;
