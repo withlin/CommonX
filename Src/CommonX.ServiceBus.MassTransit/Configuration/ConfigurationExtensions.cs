@@ -116,7 +116,6 @@ namespace CommonX.ServiceBus.MassTransit.Configuration
                             {
                                 if (retry > 0)
                                 {
-                                    //Retry.Incremental(retry, new TimeSpan(0, 0, 5), new TimeSpan(0, 0, 5)) 已经过时换成Lamdba
                                     ec.UseRetry(x=>x.Incremental(retry, new TimeSpan(0, 0, 5), new TimeSpan(0, 0, 5)));
                                 }
                                 if (isTransaction)
