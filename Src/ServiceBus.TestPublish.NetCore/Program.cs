@@ -55,10 +55,11 @@ namespace ServiceBus.TestPublish.NetCore
             Setup();
             var consumer = new Consumer<Ignore, string>(new KafkaSetting().AsKafkaSetting(), null, new StringDeserializer(Encoding.UTF8)) ;
             consumer.Assign(new List<TopicPartitionOffset> { new TopicPartitionOffset("test", 0, 0) });
-            //while (true)
-            //{
-            consumer.OnMessage += (_, msg)
+            while (true)
+            {
+                consumer.OnMessage += (_, msg)
                    => Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+            }
             //Message<Ignore, string> msg;
             //if (consumer.Consume(out msg, TimeSpan.FromSeconds(1)))
             //{

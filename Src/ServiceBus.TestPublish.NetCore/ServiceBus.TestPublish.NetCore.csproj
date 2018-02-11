@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Cfg\CacheConfiguration.config" />
+    <None Remove="Cfg\ExceptionHandlingConfiguration.config" />
+    <None Remove="Cfg\LogDataConfiguration.config" />
+    <None Remove="Cfg\LoggerConfiguration.config" />
+    <None Remove="Cfg\LoggingConfiguration.config" />
+    <None Remove="Cfg\LogMessageConfiguration.config" />
+    <None Remove="Cfg\MessagingConfiguration.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX.Autofac\CommonX.Autofac.csproj" />
+    <ProjectReference Include="..\CommonX.JsonNet\CommonX.JsonNet.csproj" />
+    <ProjectReference Include="..\CommonX.Kafka\CommonX.Kafka.csproj" />
+    <ProjectReference Include="..\CommonX.Log4Net\CommonX.Log4Net.csproj" />
+    <ProjectReference Include="..\CommonX.Quartz\CommonX.Quartz.csproj" />
+    <ProjectReference Include="..\CommonX.RabbitMQ\CommonX.RabbitMQ.csproj" />
+    <ProjectReference Include="..\CommonX.Redis\CommonX.Cache.Redis.csproj" />
+    <ProjectReference Include="..\CommonX.ServiceBus.MassTransit\CommonX.ServiceBus.MassTransit.csproj" />
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
+</Project>
