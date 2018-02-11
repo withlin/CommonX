@@ -18,6 +18,8 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Threading;
 using System.Text;
+using CommonX.Quartz;
+using CommonX.Cache.Redis;
 
 namespace ServiceBus.TestPublish.NetCore
 {
@@ -93,8 +95,10 @@ namespace ServiceBus.TestPublish.NetCore
                 .RegisterCommonComponents()
                 .UseLog4Net()
                 .UseJsonNet()
-                .UseMassTransit(new[] { assambly });
-                config.UseKafka();
+                .UseRabbitMQ("localshot", "/", "guest", "guest")
+                .UseMassTransit(new[] { assambly })
+                .UseKafka()
+                .UseRedis();
             //_logger = ObjectContainer.Current.BeginLifetimeScope().Resolve<ILoggerFactory>().Create(typeof(Program).Name);
             using (var log = ObjectContainer.Current.BeginLifetimeScope())
             {

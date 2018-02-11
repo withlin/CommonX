@@ -2,11 +2,11 @@
 using Common.Logging;
 using CommonX.Autofac;
 using CommonX.Components;
+using CommonX.Configurations;
 using CommonX.Quartz.Logging.EntLib;
 using Quartz;
 using Quartz.Xml.JobSchedulingData20;
 using System.Collections.Specialized;
-using System.Configuration;
 using System.IO;
 using System.Reflection;
 
