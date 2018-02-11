@@ -32,7 +32,7 @@ namespace CommonX.Attribute
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="serviceType">接口全称，命名空间,如："JZTERP.Common.Shared.Interfaces.ILookupQueryService, JZTERP.Common.Shared.Interfaces"</param>
+        /// <param name="serviceType">接口全称，命名空间,如："CommonX.Shared.Interfaces.ILookupQueryService, CommonX.Shared.Interfaces"</param>
         /// <param name="method">方法名</param>
         /// <param name="propertyName">需要匹配的属性名，多个属性以","分开</param>
         /// <param name="constValue">需要匹配的常量名，多个常量以","分开</param>

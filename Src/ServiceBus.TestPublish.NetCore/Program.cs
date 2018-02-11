@@ -51,49 +51,67 @@ namespace ServiceBus.TestPublish.NetCore
         private static IConsumerClientFactory factory;
         static void Main(string[] args)
         {
-            //Producer aa = new Producer(new KafkaSetting().AsKafkaSetting());
-            Setup();
-            var consumer = new Consumer<Ignore, string>(new KafkaSetting().AsKafkaSetting(), null, new StringDeserializer(Encoding.UTF8)) ;
-            consumer.Assign(new List<TopicPartitionOffset> { new TopicPartitionOffset("test", 0, 0) });
-            while (true)
+           
+        }
+
+        public static void Run_Consume(string topics)
+        {
+            using (var consumer= factory.Create("simple-csharp-consumer") as Consumer<Ignore, string>)
             {
-                consumer.OnMessage += (_, msg)
-                   => Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+                // Note: All event handlers are called on the main thread.
+
+                consumer.OnPartitionEOF += (_, end)
+                    => Console.WriteLine($"Reached end of topic {end.Topic} partition {end.Partition}, next message will be at offset {end.Offset}");
+
+                consumer.OnError += (_, error)
+                    => Console.WriteLine($"Error: {error}");
+
+                consumer.OnConsumeError += (_, error)
+                    => Console.WriteLine($"Consume error: {error}");
+
+                consumer.OnPartitionsAssigned += (_, partitions) =>
+                {
+                    Console.WriteLine($"Assigned partitions: [{string.Join(", ", partitions)}], member id: {consumer.MemberId}");
+                    consumer.Assign(partitions);
+                };
+
+                consumer.OnPartitionsRevoked += (_, partitions) =>
+                {
+                    Console.WriteLine($"Revoked partitions: [{string.Join(", ", partitions)}]");
+                    consumer.Unassign();
+                };
+
+                consumer.OnStatistics += (_, json)
+                    => Console.WriteLine($"Statistics: {json}");
+
+                consumer.Subscribe(topics);
+
+                Console.WriteLine($"Started consumer, Ctrl-C to stop consuming");
+
+                var cancelled = false;
+                Console.CancelKeyPress += (_, e) => {
+                    e.Cancel = true; // prevent the process from terminating.
+                    cancelled = true;
+                };
+
+                while (!cancelled)
+                {
+                    Message<Ignore, string> msg;
+                    if (!consumer.Consume(out msg, TimeSpan.FromMilliseconds(100)))
+                    {
+                        continue;
+                    }
+
+                    Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+
+                    if (msg.Offset % 5 == 0)
+                    {
+                        Console.WriteLine($"Committing offset");
+                        var committedOffsets = consumer.CommitAsync(msg).Result;
+                        Console.WriteLine($"Committed offset: {committedOffsets}");
+                    }
+                }
             }
-            //Message<Ignore, string> msg;
-            //if (consumer.Consume(out msg, TimeSpan.FromSeconds(1)))
-            //{
-
-            //    Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
-            //}
-            //}
-
-            //    List<string> topics = new List<string>();
-            //var prodocer = _conn.Rent();
-            //var aa = Encoding.Default.GetBytes("aaaa");
-            //prodocer.ProduceAsync("test1", null, aa);
-            //topics.Add("test1");
-
-            //CancellationTokenSource source = new CancellationTokenSource();
-            //CancellationToken tok = source.Token;
-            //factory.Create("simple-csharp-consumer").OnMessageReceived += Program_OnMessageReceived;
-            //factory.Create("simple-csharp-consumer").Subscribe(topics);
-
-            //Task t = new Task(() =>
-            //{
-            //    factory.Create("simple-csharp-consumer").Listening(TimeSpan.FromSeconds(1), tok);
-            //}, tok);
-
-            //t.Start();
-
-
-
-
-
-            //_bus.Send("ServiceBus.TestPublish.NetCore", new RequestIntegrationEvent() { Message = "Masstransit test Succees!" });
-            //_logger.Info("ServiceBus Logs test!!");
-            //Console.WriteLine("Masstransit test Succees！");
-            //Console.ReadKey();
         }
 
         private static void Program_OnMessageReceived(object sender, CommonX.Models.MessageContext e)
