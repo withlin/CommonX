@@ -30,6 +30,7 @@ namespace CommonX.Kafka
                 _setting["socket.blocking.max.ms"] = "10";
                 _setting["enable.auto.commit"] = "false";
                 _setting["log.connection.close"] = "false";
+                _setting["group.id"] ="sample.app.NetCore";
                 //_setting["group.id"] = new Guid().ToString();
 
                 //ProduceAsync是按照顺序发送的如果发生异常 比如网络不可达，然后kafka client会重试，

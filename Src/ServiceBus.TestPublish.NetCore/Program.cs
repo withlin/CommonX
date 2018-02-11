@@ -20,6 +20,7 @@ using System.Threading;
 using System.Text;
 using CommonX.Quartz;
 using CommonX.Cache.Redis;
+using Confluent.Kafka.Serialization;
 
 namespace ServiceBus.TestPublish.NetCore
 {
@@ -52,28 +53,46 @@ namespace ServiceBus.TestPublish.NetCore
         {
             //Producer aa = new Producer(new KafkaSetting().AsKafkaSetting());
             Setup();
-            List<string> topics = new List<string>();
-           var prodocer= _conn.Rent();
-            var aa = Encoding.Default.GetBytes("aaaa");
-            prodocer.ProduceAsync("test1", null, aa);
-            topics.Add("test1");
-            CancellationTokenSource source = new CancellationTokenSource();
-            CancellationToken tok = source.Token;
-            factory.Create("simple-csharp-consumer").Subscribe(topics);
-            factory.Create("simple-csharp-consumer").OnMessageReceived += Program_OnMessageReceived;
-            Task t = new Task(() =>
-            {
-                factory.Create("simple-csharp-consumer").Listening(TimeSpan.FromSeconds(1), tok);
-            }, tok);
+            var consumer = new Consumer<Ignore, string>(new KafkaSetting().AsKafkaSetting(), null, new StringDeserializer(Encoding.UTF8)) ;
+            consumer.Assign(new List<TopicPartitionOffset> { new TopicPartitionOffset("test", 0, 0) });
+            //while (true)
+            //{
+            consumer.OnMessage += (_, msg)
+                   => Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+            //Message<Ignore, string> msg;
+            //if (consumer.Consume(out msg, TimeSpan.FromSeconds(1)))
+            //{
 
-            t.Start();
-           
+            //    Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+            //}
+            //}
+
+            //    List<string> topics = new List<string>();
+            //var prodocer = _conn.Rent();
+            //var aa = Encoding.Default.GetBytes("aaaa");
+            //prodocer.ProduceAsync("test1", null, aa);
+            //topics.Add("test1");
+
+            //CancellationTokenSource source = new CancellationTokenSource();
+            //CancellationToken tok = source.Token;
+            //factory.Create("simple-csharp-consumer").OnMessageReceived += Program_OnMessageReceived;
+            //factory.Create("simple-csharp-consumer").Subscribe(topics);
+
+            //Task t = new Task(() =>
+            //{
+            //    factory.Create("simple-csharp-consumer").Listening(TimeSpan.FromSeconds(1), tok);
+            //}, tok);
+
+            //t.Start();
 
 
-            _bus.Send("ServiceBus.TestPublish.NetCore", new RequestIntegrationEvent() { Message = "Masstransit test Succees!" });
-            _logger.Info("ServiceBus Logs test!!");
-            Console.WriteLine("Masstransit test Succees！");
-            Console.ReadKey();
+
+
+
+            //_bus.Send("ServiceBus.TestPublish.NetCore", new RequestIntegrationEvent() { Message = "Masstransit test Succees!" });
+            //_logger.Info("ServiceBus Logs test!!");
+            //Console.WriteLine("Masstransit test Succees！");
+            //Console.ReadKey();
         }
 
         private static void Program_OnMessageReceived(object sender, CommonX.Models.MessageContext e)
@@ -86,7 +105,7 @@ namespace ServiceBus.TestPublish.NetCore
         {
             return () => new RequestIntegrationEventHandler();
         }
-            
+
         public static void Setup()
         {
             var assambly = Assembly.GetAssembly(typeof(Program));
@@ -95,11 +114,9 @@ namespace ServiceBus.TestPublish.NetCore
                 .RegisterCommonComponents()
                 .UseLog4Net()
                 .UseJsonNet()
-                .UseRabbitMQ("localshot", "/", "guest", "guest")
                 .UseMassTransit(new[] { assambly })
-                .UseKafka()
-                .UseRedis();
-            //_logger = ObjectContainer.Current.BeginLifetimeScope().Resolve<ILoggerFactory>().Create(typeof(Program).Name);
+                .UseKafka();
+
             using (var log = ObjectContainer.Current.BeginLifetimeScope())
             {
                 _logger = log.Resolve<ILoggerFactory>().Create(typeof(Program).Name);
@@ -115,7 +132,7 @@ namespace ServiceBus.TestPublish.NetCore
 
                 //_eventBus = scope.Resolve<IEventBus>();
                 _conn = scope.Resolve<IConnectionPool>();
-                factory= scope.Resolve<IConsumerClientFactory>();
+                factory = scope.Resolve<IConsumerClientFactory>();
             }
 
         }
