@@ -1,4 +1,5 @@
-﻿using CommonX.Models;
+﻿using CommonX.Logging;
+using CommonX.Models;
 using Confluent.Kafka;
 using Confluent.Kafka.Serialization;
 using System;
@@ -12,7 +13,7 @@ namespace CommonX.Kafka.Impl
     {
         private readonly string _groupId;
         private readonly KafkaSetting _kafkaSetting;
-        private Consumer<Null, string> _consumerClient;
+        private Consumer<Ignore, string> _consumerClient;
 
         public KafkaConsumerClient(string groupId, KafkaSetting kafkaSetting)
         {
@@ -33,9 +34,13 @@ namespace CommonX.Kafka.Impl
                 throw new ArgumentNullException(nameof(topics));
 
             if (_consumerClient == null)
-                InitKafkaClient();
+                
 
-            _consumerClient.Subscribe(topics);
+            using (_consumerClient)
+            {
+                    InitKafkaClient();
+                    _consumerClient.Subscribe(topics);
+            }
         }
 
         public void Listening(TimeSpan timeout, CancellationToken cancellationToken)
@@ -72,12 +77,16 @@ namespace CommonX.Kafka.Impl
             _kafkaSetting._setting["group.id"] = _groupId;
 
             var config = _kafkaSetting.AsKafkaSetting();
-            _consumerClient = new Consumer<Null, string>(config, null, StringDeserializer);
+            _consumerClient = new Consumer<Ignore, string>(config, null, StringDeserializer);
             _consumerClient.OnConsumeError += ConsumerClient_OnConsumeError;
-            _consumerClient.OnMessage += ConsumerClient_OnMessage;
             _consumerClient.OnError += ConsumerClient_OnError;
+            _consumerClient.OnMessage += _consumerClient_OnMessage;
         }
 
+        private void _consumerClient_OnMessage(object sender, Message<Ignore, string> e)
+        {
+            Console.WriteLine(e.Value);
+        }
 
         private void ConsumerClient_OnConsumeError(object sender, Message e)
         {

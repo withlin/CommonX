@@ -1,7 +1,6 @@
 ﻿using CommonX.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace CommonX.Kafka
@@ -22,15 +21,15 @@ namespace CommonX.Kafka
         /// <summary>
         /// Manual submit message offset when the message consumption is complete
         /// </summary>
-        void Commit();
+        void Commit(); 
 
         /// <summary>
         /// Reject message and resumption
         /// </summary>
-        void Reject();
+        void Reject();  
 
-        event EventHandler<MessageContext> OnMessageReceived;
+        event EventHandler<MessageContext> OnMessageReceived;  
 
-        event EventHandler<LogMessageEventArgs> OnLog;
+        event EventHandler<LogMessageEventArgs> OnLog;   
     }
 }

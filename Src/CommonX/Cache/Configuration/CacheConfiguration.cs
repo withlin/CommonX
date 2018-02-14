@@ -12,7 +12,6 @@ namespace CommonX.Cache.Configuration
     [Serializable]
     public class CacheConfiguration : ConfigurationSection, ICacheConfiguration
     {
-        //public const string SectionName = "CacheConfiguration";
         private const string ConstantRefreshMinutesProperty = "refreshMinutes";
 
         private const string ConstantEntLibConfigurationSectionName = "CacheConfiguration";
