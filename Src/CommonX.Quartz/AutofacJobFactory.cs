@@ -45,12 +45,10 @@ namespace CommonX.Quartz
         /// </exception>
         public AutofacJobFactory(ILifetimeScope lifetimeScope, ILoggerFactory loggerFactory, string scopeName)
         {
-            if (lifetimeScope == null) throw new ArgumentNullException(nameof(lifetimeScope));
             if (loggerFactory == null) throw new ArgumentNullException(nameof(loggerFactory));
-            if (scopeName == null) throw new ArgumentNullException(nameof(scopeName));
-            _lifetimeScope = lifetimeScope;
-            _logger = loggerFactory.Create(this.GetType());
-            _scopeName = scopeName;
+            _lifetimeScope = lifetimeScope ?? throw new ArgumentNullException(nameof(lifetimeScope));
+            _logger = loggerFactory.Create(GetType());
+            _scopeName = scopeName ?? throw new ArgumentNullException(nameof(scopeName));
         }
 
         internal ConcurrentDictionary<object, JobTrackingInfo> RunningJobs { get; } =
