@@ -49,14 +49,66 @@ namespace ServiceBus.TestPublish.NetCore
         private static ILogger _logger;
         private static IConnectionPool _conn;
         private static IConsumerClientFactory factory;
+        private static IKafkaPersisterConnection _consumerClient;
+        private static void HandlerMessage(Message<string, string> msg)
+        {
+            Console.WriteLine($"消息的值为{msg.Value}");
+        }
         static void Main(string[] args)
         {
-           
+            //Run_Consume("test", HandlerMessage);
+            Setup();
+            Console.WriteLine();
+            List<string> topics = new List<string>();
+            topics.Add("test");
+            _consumerClient.Consume(topics, HandlerMessage);
+
+
+
+
+            //Producer aa = new Producer(new KafkaSetting().AsKafkaSetting());
+            //Setup();
+            //Message<Ignore, string> msg;
+            //if (consumer.Consume(out msg, TimeSpan.FromSeconds(1)))
+            //{
+
+            //    Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+            //}
+            //}
+
+            //List<string> topics = new List<string>();
+            //var prodocer = _conn.Rent();
+            //var aa = Encoding.Default.GetBytes("aaaa");
+            //prodocer.ProduceAsync("test1", null, aa);
+            //topics.Add("test");
+
+            //CancellationTokenSource source = new CancellationTokenSource();
+            //CancellationToken tok = source.Token;
+            //factory.Create("simple-csharp-consumer").OnMessageReceived += Program_OnMessageReceived;
+            //while (true)
+            //{
+            //    factory.Create("simple-csharp-consumer").Subscribe(topics);
+            //}
+            //Task t = new Task(() =>
+            //{
+            //    factory.Create("simple-csharp-consumer").Listening(TimeSpan.FromSeconds(1), tok);
+            //}, tok);
+
+            //t.Start();
+
+
+
+
+
+            //_bus.Send("ServiceBus.TestPublish.NetCore", new RequestIntegrationEvent() { Message = "Masstransit test Succees!" });
+            //_logger.Info("ServiceBus Logs test!!");
+            //Console.WriteLine("Masstransit test Succees！");
+            //Console.ReadKey();
         }
 
-        public static void Run_Consume(string topics)
+        public static void Run_Consume(string topics,Action<Message<string, string>> msgs)
         {
-            using (var consumer= factory.Create("simple-csharp-consumer") as Consumer<Ignore, string>)
+            using (var consumer = new Consumer<string, string>(new KafkaSetting().AsKafkaSetting(), new StringDeserializer(Encoding.UTF8), new StringDeserializer(Encoding.UTF8)))
             {
                 // Note: All event handlers are called on the main thread.
 
@@ -90,19 +142,21 @@ namespace ServiceBus.TestPublish.NetCore
 
                 var cancelled = false;
                 Console.CancelKeyPress += (_, e) => {
+
                     e.Cancel = true; // prevent the process from terminating.
                     cancelled = true;
                 };
-
+                string value = string.Empty;
                 while (!cancelled)
                 {
-                    Message<Ignore, string> msg;
+                    Message<string, string> msg;
                     if (!consumer.Consume(out msg, TimeSpan.FromMilliseconds(100)))
                     {
                         continue;
                     }
 
-                    Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+                    //Console.WriteLine($"Topic: {msg.Topic} Partition: {msg.Partition} Offset: {msg.Offset} {msg.Value}");
+                    msgs.Invoke(msg);
 
                     if (msg.Offset % 5 == 0)
                     {
@@ -133,8 +187,7 @@ namespace ServiceBus.TestPublish.NetCore
                 .RegisterCommonComponents()
                 .UseLog4Net()
                 .UseJsonNet()
-                .UseMassTransit(new[] { assambly })
-                .UseKafka();
+                .UseKafka("");
 
             using (var log = ObjectContainer.Current.BeginLifetimeScope())
             {
@@ -152,6 +205,7 @@ namespace ServiceBus.TestPublish.NetCore
                 //_eventBus = scope.Resolve<IEventBus>();
                 _conn = scope.Resolve<IConnectionPool>();
                 factory = scope.Resolve<IConsumerClientFactory>();
+                _consumerClient = scope.Resolve<IKafkaPersisterConnection>();
             }
 
         }
