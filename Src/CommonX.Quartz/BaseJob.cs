@@ -12,7 +12,7 @@ namespace CommonX.Quartz
         protected ILogger _logger;
 
         public BaseJob(ILoggerFactory loggerFactory) {
-            _logger = loggerFactory.Create(this.GetType());
+            _logger = loggerFactory.Create(GetType());
         }
 
         public async Task Execute(IJobExecutionContext context)

@@ -1,16 +1,12 @@
-﻿using Autofac;
-using Quartz;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using Module = Autofac.Module;
-
-namespace CommonX.Quartz
+﻿namespace CommonX.Quartz
 {
+    using System;
+    using System.Reflection;
+    using System.Runtime.CompilerServices;
+    using global::Autofac;
+    using global::Quartz;
+    using JetBrains.Annotations;
+    using Module = global::Autofac.Module;
 
     /// <summary>
     ///     Predicate to filter jobs to be registered.
@@ -22,9 +18,10 @@ namespace CommonX.Quartz
     /// <summary>
     ///     Registers Quartz jobs from specified assemblies.
     /// </summary>
+    [PublicAPI]
     public class QuartzAutofacJobsModule : Module
     {
-        readonly Assembly[] _assembliesToScan;
+        [NotNull] readonly Assembly[] _assembliesToScan;
 
 
         /// <summary>
@@ -32,10 +29,9 @@ namespace CommonX.Quartz
         /// </summary>
         /// <param name="assembliesToScan">The assemblies to scan for jobs.</param>
         /// <exception cref="System.ArgumentNullException">assembliesToScan</exception>
-        public QuartzAutofacJobsModule(params Assembly[] assembliesToScan)
+        public QuartzAutofacJobsModule([NotNull] params Assembly[] assembliesToScan)
         {
-            if (assembliesToScan == null) throw new ArgumentNullException(nameof(assembliesToScan));
-            _assembliesToScan = assembliesToScan;
+            _assembliesToScan = assembliesToScan ?? throw new ArgumentNullException(nameof(assembliesToScan));
         }
 
         /// <summary>
@@ -59,6 +55,7 @@ namespace CommonX.Quartz
         ///     Job registration filter callback.
         /// </summary>
         /// <seealso cref="JobRegistrationFilter" />
+        [CanBeNull]
         public JobRegistrationFilter JobFilter { get; set; }
 
         /// <summary>
@@ -74,17 +71,22 @@ namespace CommonX.Quartz
         protected override void Load(ContainerBuilder builder)
         {
             var registrationBuilder = builder.RegisterAssemblyTypes(_assembliesToScan)
-                .Where(type => !type.IsAbstract && typeof(IJob).IsAssignableFrom(type) && FilterJob(type))
+                .Where(type => !IsAbstract(type) && typeof(IJob).IsAssignableFrom(type) && FilterJob(type))
                 .AsSelf().InstancePerLifetimeScope();
 
             if (AutoWireProperties)
-                registrationBuilder.PropertiesAutowired(PropertyWiringOptions);            
+                registrationBuilder.PropertiesAutowired(PropertyWiringOptions);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        bool FilterJob(Type jobType)
+        private bool FilterJob([NotNull] Type jobType)
         {
-            return JobFilter == null || JobFilter(jobType);
+            return JobFilter?.Invoke(jobType) ?? true;
+        }
+
+        private static bool IsAbstract([NotNull] Type type)
+        {
+            return type.IsAbstract;
         }
     }
 }

@@ -1,28 +1,28 @@
-﻿using Quartz;
-using Quartz.Core;
-using Quartz.Impl;
-using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CommonX.Quartz
+﻿namespace CommonX.Quartz
 {
+    using System;
+    using System.Collections.Specialized;
+    using global::Quartz;
+    using global::Quartz.Core;
+    using global::Quartz.Impl;
+    using JetBrains.Annotations;
+
+    /// <summary>
+    ///     Scheduler factory which uses Autofac to instantiate jobs.
+    /// </summary>
+    [PublicAPI]
     public class AutofacSchedulerFactory : StdSchedulerFactory
     {
-        readonly AutofacJobFactory _jobFactory;
+        [NotNull] readonly AutofacJobFactory _jobFactory;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:Quartz.Impl.StdSchedulerFactory" /> class.
         /// </summary>
         /// <param name="jobFactory">Job factory.</param>
         /// <exception cref="ArgumentNullException"><paramref name="jobFactory" /> is <see langword="null" />.</exception>
-        public AutofacSchedulerFactory(AutofacJobFactory jobFactory)
+        public AutofacSchedulerFactory([NotNull] AutofacJobFactory jobFactory)
         {
-            if (jobFactory == null) throw new ArgumentNullException(nameof(jobFactory));
-            _jobFactory = jobFactory;
+            _jobFactory = jobFactory ?? throw new ArgumentNullException(nameof(jobFactory));
         }
 
         /// <summary>
@@ -31,11 +31,10 @@ namespace CommonX.Quartz
         /// <param name="props">The properties.</param>
         /// <param name="jobFactory">Job factory</param>
         /// <exception cref="ArgumentNullException"><paramref name="jobFactory" /> is <see langword="null" />.</exception>
-        public AutofacSchedulerFactory(NameValueCollection props,  AutofacJobFactory jobFactory)
+        public AutofacSchedulerFactory(NameValueCollection props, [NotNull] AutofacJobFactory jobFactory)
             : base(props)
         {
-            if (jobFactory == null) throw new ArgumentNullException(nameof(jobFactory));
-            _jobFactory = jobFactory;
+            _jobFactory = jobFactory ?? throw new ArgumentNullException(nameof(jobFactory));
         }
 
         /// <summary>

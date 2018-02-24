@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Confluent.Kafka;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,8 @@ namespace CommonX.Kafka
             _setting = new ConcurrentDictionary<string, object>();
         }
         public int ConnectionPoolSize { get; set; } = 10;
-        public string Servers { get; set; } = "localhost:9092";
+        BrokerMetadata metadata = new BrokerMetadata(1, "10.3.87.33", 9092);
+        public string Servers { get; set; } = "10.3.87.33:9092,10.3.2.209:9092,10.3.87.211:9092";
         public IEnumerable<KeyValuePair<string, object>> AsKafkaSetting()
         {
             if (_kafkaSetting == null)
@@ -25,7 +27,8 @@ namespace CommonX.Kafka
                 if (string.IsNullOrWhiteSpace(Servers))
                     throw new ArgumentNullException(nameof(Servers));
 
-                _setting["bootstrap.servers"] = Servers;
+                _setting["metadata.broker.list"] = Servers;
+                _setting["api.version.request"] = "true";
                 _setting["queue.buffering.max.ms"] = "10";
                 _setting["socket.blocking.max.ms"] = "10";
                 _setting["enable.auto.commit"] = "false";

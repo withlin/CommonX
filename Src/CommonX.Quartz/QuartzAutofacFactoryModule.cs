@@ -1,21 +1,20 @@
-﻿using Autofac;
-using CommonX.Logging;
-using Quartz;
-using Quartz.Spi;
-using System;
-using System.Collections.Specialized;
-
-namespace CommonX.Quartz
+﻿namespace CommonX.Quartz
 {
+    using System;
+    using System.Collections.Specialized;
+    using global::Autofac;
+    using global::Quartz;
+    using global::Quartz.Spi;
+    using JetBrains.Annotations;
 
     /// <summary>
     ///     Registers <see cref="ISchedulerFactory" /> and default <see cref="IScheduler" />.
     /// </summary>
+    [PublicAPI]
     public class QuartzAutofacFactoryModule : Module
     {
         /// <summary>
         ///     Default name for nested lifetime scope.
-        ///     替换成MatchingScopeLifetimeTags.RequestLifetimeScopeTag
         /// </summary>
         public const string LifetimeScopeName = "quartz.job";
 
@@ -36,10 +35,9 @@ namespace CommonX.Quartz
         /// </summary>
         /// <param name="lifetimeScopeName">Name of the lifetime scope to wrap job resolution and execution.</param>
         /// <exception cref="System.ArgumentNullException">lifetimeScopeName</exception>
-        public QuartzAutofacFactoryModule(string lifetimeScopeName)
+        public QuartzAutofacFactoryModule([NotNull] string lifetimeScopeName)
         {
-            if (lifetimeScopeName == null) throw new ArgumentNullException(nameof(lifetimeScopeName));
-            _lifetimeScopeName = lifetimeScopeName;
+            _lifetimeScopeName = lifetimeScopeName ?? throw new ArgumentNullException(nameof(lifetimeScopeName));
         }
 
         /// <summary>
@@ -48,6 +46,7 @@ namespace CommonX.Quartz
         ///     <para>See http://quartz-scheduler.org/documentation/quartz-2.x/configuration/ for settings description.</para>
         ///     <seealso cref="StdSchedulerFactory" /> for some configuration property names.
         /// </summary>
+        [CanBeNull]
         public Func<IComponentContext, NameValueCollection> ConfigurationProvider { get; set; }
 
         /// <summary>
@@ -60,24 +59,28 @@ namespace CommonX.Quartz
         ///     The builder through which components can be
         ///     registered.
         /// </param>
-        protected override void Load( ContainerBuilder builder)
+        protected override void Load(ContainerBuilder builder)
         {
-            builder.Register(c => new AutofacJobFactory(c.Resolve<ILifetimeScope>(),c.Resolve<ILoggerFactory>(), _lifetimeScopeName))
+            builder.Register(c => new AutofacJobFactory(c.Resolve<ILifetimeScope>(), _lifetimeScopeName))
                 .AsSelf()
                 .As<IJobFactory>()
                 .SingleInstance();
 
-            builder.Register<ISchedulerFactory>(c =>
-            {
+            builder.Register<ISchedulerFactory>(c => {
                 var cfgProvider = ConfigurationProvider;
 
                 var autofacSchedulerFactory = cfgProvider != null
                     ? new AutofacSchedulerFactory(cfgProvider(c), c.Resolve<AutofacJobFactory>())
                     : new AutofacSchedulerFactory(c.Resolve<AutofacJobFactory>());
                 return autofacSchedulerFactory;
-            }).SingleInstance();
+            })
+                .SingleInstance();
 
-            builder.Register(c => c.Resolve<ISchedulerFactory>().GetScheduler()).SingleInstance();
+            builder.Register(c => {
+                var factory = c.Resolve<ISchedulerFactory>();
+                return factory.GetScheduler().ConfigureAwait(false).GetAwaiter().GetResult();
+            })
+                .SingleInstance();
         }
     }
 }

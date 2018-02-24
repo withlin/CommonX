@@ -56,9 +56,13 @@ namespace CommonX.Quartz
                 {
                     AutoWireProperties = true
                 });
+
+
                 builder.Update(container);
+
+
                 IScheduler scheduler = container.Resolve<IScheduler>();
-                scheduler.Start();                
+                scheduler.Start();
             }
             return configuration;
         }

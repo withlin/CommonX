@@ -1,54 +1,38 @@
-﻿using Autofac;
-using Autofac.Core.Lifetime;
-using CommonX.Autofac;
-using CommonX.Components;
-using CommonX.Logging;
-using Quartz;
-using Quartz.Spi;
-using Quartz.Util;
-using System;
-using System.Collections.Concurrent;
-using System.Globalization;
-using System.Reflection;
-
-namespace CommonX.Quartz
+﻿namespace CommonX.Quartz
 {
+    using System;
+    using System.Collections.Concurrent;
+    using System.Globalization;
+    using global::Autofac;
+    using global::Quartz;
+    using global::Quartz.Spi;
+    using JetBrains.Annotations;
+
+    /// <summary>
+    ///     Resolve Quartz Job and it's dependencies from Autofac container.
+    /// </summary>
+    /// <remarks>
+    ///     Factory retuns wrapper around read job. It wraps job execution in nested lifetime scope.
+    /// </remarks>
     public class AutofacJobFactory : IJobFactory, IDisposable
     {
-        private  readonly ILogger _logger;
-        private readonly ILifetimeScope _lifetimeScope;
-        private readonly string _scopeName;
+        [NotNull] readonly ILifetimeScope _lifetimeScope;
 
-        /// <summary> 
-        /// Whether the JobInstantiation should fail and throw and exception if
-        /// a key (name) and value (type) found in the JobDataMap does not 
-        /// correspond to a property setter on the Job class.
-        /// </summary>
-        public virtual bool ThrowIfPropertyNotFound { get; set; }
-
-        /// <summary> 
-        /// Get or set whether a warning should be logged if
-        /// a key (name) and value (type) found in the JobDataMap does not 
-        /// correspond to a property setter on the Job class.
-        /// </summary>
-        public virtual bool WarnIfPropertyNotFound { get; set; }
-
+        [NotNull] readonly object _scopeTag;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="AutofacJobFactory" /> class.
         /// </summary>
         /// <param name="lifetimeScope">The lifetime scope.</param>
-        /// <param name="scopeName">Name of the scope.</param>
+        /// <param name="scopeTag">The tag to use for new scopes.</param>
         /// <exception cref="ArgumentNullException">
-        ///     <paramref name="lifetimeScope" /> or <paramref name="scopeName" /> is
+        ///     <paramref name="lifetimeScope" /> or <paramref name="scopeTag" /> is
         ///     <see langword="null" />.
         /// </exception>
-        public AutofacJobFactory(ILifetimeScope lifetimeScope, ILoggerFactory loggerFactory, string scopeName)
+        public AutofacJobFactory([NotNull] ILifetimeScope lifetimeScope, [NotNull] object scopeTag)
         {
-            if (loggerFactory == null) throw new ArgumentNullException(nameof(loggerFactory));
             _lifetimeScope = lifetimeScope ?? throw new ArgumentNullException(nameof(lifetimeScope));
-            _logger = loggerFactory.Create(GetType());
-            _scopeName = scopeName ?? throw new ArgumentNullException(nameof(scopeName));
+            _scopeTag = scopeTag ?? throw new ArgumentNullException(nameof(scopeTag));
         }
 
         internal ConcurrentDictionary<object, JobTrackingInfo> RunningJobs { get; } =
@@ -59,13 +43,7 @@ namespace CommonX.Quartz
         /// </summary>
         public void Dispose()
         {
-            var runningJobs = RunningJobs.ToArray();
             RunningJobs.Clear();
-
-            if (runningJobs.Length > 0)
-            {
-                _logger.Debug($"Cleaned {runningJobs.Length} scopes for running jobs");
-            }
         }
 
         /// <summary>
@@ -96,6 +74,7 @@ namespace CommonX.Quartz
         ///     Error resolving exception. Original exception will be stored in
         ///     <see cref="Exception.InnerException" />.
         /// </exception>
+        [NotNull]
         public IJob NewJob(TriggerFiredBundle bundle, IScheduler scheduler)
         {
             if (bundle == null) throw new ArgumentNullException(nameof(bundle));
@@ -103,39 +82,21 @@ namespace CommonX.Quartz
 
             var jobType = bundle.JobDetail.JobType;
 
-            //var nestedScope = _lifetimeScope.BeginLifetimeScope(_scopeName);
-            var nestedScope = _lifetimeScope.BeginLifetimeScope(MatchingScopeLifetimeTags.RequestLifetimeScopeTag);
-            //var nestedScope =
-                (ObjectContainer.Current as AutofacObjectContainer)?.Container.BeginLifetimeScope(
-                    MatchingScopeLifetimeTags.RequestLifetimeScopeTag);
+            var nestedScope = _lifetimeScope.BeginLifetimeScope(_scopeTag);
 
-            IJob newJob = null;
+            IJob newJob;
             try
             {
                 newJob = (IJob)nestedScope.Resolve(jobType);
-
-                JobDataMap jobDataMap = new JobDataMap();
-                jobDataMap.PutAll(scheduler.Context);
-                jobDataMap.PutAll(bundle.JobDetail.JobDataMap);
-                jobDataMap.PutAll(bundle.Trigger.JobDataMap);
-
-                SetObjectProperties(newJob, jobDataMap);
-
                 var jobTrackingInfo = new JobTrackingInfo(nestedScope);
                 RunningJobs[newJob] = jobTrackingInfo;
-
-                if (_logger.IsDebugEnabled)
-                {
-                    _logger.Info($"Scope 0x{jobTrackingInfo.Scope.GetHashCode():x} associated with Job 0x{newJob.GetHashCode():x}");                    
-                }
-
                 nestedScope = null;
             }
             catch (Exception ex)
             {
                 if (nestedScope != null)
                 {
-                    DisposeScope(newJob, nestedScope);
+                    nestedScope?.Dispose();
                 }
                 throw new SchedulerConfigException(string.Format(CultureInfo.InvariantCulture,
                     "Failed to instantiate Job '{0}' of type '{1}'",
@@ -152,27 +113,15 @@ namespace CommonX.Quartz
             if (job == null)
                 return;
 
-            JobTrackingInfo trackingInfo;
-            if (!RunningJobs.TryRemove(job, out trackingInfo))
+            if (!RunningJobs.TryRemove(job, out var trackingInfo))
             {
-                _logger.Warn($"Tracking info for job 0x{ job.GetHashCode():x} not found");               
                 // ReSharper disable once SuspiciousTypeConversion.Global
-                var disposableJob = job as IDisposable;
-                disposableJob?.Dispose();
+                (job as IDisposable)?.Dispose();
             }
             else
             {
-                DisposeScope(job, trackingInfo.Scope);
+                trackingInfo.Scope?.Dispose();
             }
-        }
-
-        void DisposeScope(IJob job, ILifetimeScope lifetimeScope)
-        {
-            if (_logger.IsDebugEnabled)
-            {
-                _logger.Info($"Disposing Scope 0x{ lifetimeScope?.GetHashCode() ?? 0:x} for Job 0x{job?.GetHashCode() ?? 0:x}");               
-            }
-            lifetimeScope?.Dispose();
         }
 
         #region Job data
@@ -191,107 +140,5 @@ namespace CommonX.Quartz
         }
 
         #endregion Job data
-
-        /// <summary>
-        /// Sets the object properties.
-        /// </summary>
-        /// <param name="obj">The object to set properties to.</param>
-        /// <param name="data">The data to set.</param>
-		public virtual void SetObjectProperties(object obj, JobDataMap data)
-        {
-            Type paramType = null;
-
-            foreach (string name in data.Keys)
-            {
-                string c = name.Substring(0, 1).ToUpper(CultureInfo.InvariantCulture);
-                string propName = c + name.Substring(1);
-
-                object o = data[name];
-                PropertyInfo prop = obj.GetType().GetProperty(propName);
-
-                try
-                {
-                    if (prop == null)
-                    {
-                        HandleError(string.Format(CultureInfo.InvariantCulture, "No property on Job class {0} for property '{1}'", obj.GetType(), name));
-                        continue;
-                    }
-
-                    paramType = prop.PropertyType;
-
-                    if (o == null && (paramType.IsPrimitive || paramType.IsEnum))
-                    {
-                        // cannot set null to these
-                        HandleError(string.Format(CultureInfo.InvariantCulture, "Cannot set null to property on Job class {0} for property '{1}'", obj.GetType(), name));
-                    }
-                    if (paramType == typeof(char) && o is string && ((string)o).Length != 1)
-                    {
-                        // handle special case
-                        HandleError(string.Format(CultureInfo.InvariantCulture, "Cannot set empty string to char property on Job class {0} for property '{1}'", obj.GetType(), name));
-                    }
-
-                    object goodValue = paramType == typeof(TimeSpan)
-                                           ? ObjectUtils.GetTimeSpanValueForProperty(prop, o)
-                                           : ObjectUtils.ConvertValueIfNecessary(paramType, o);
-
-                    prop.GetSetMethod().Invoke(obj, new object[] { goodValue });
-                }
-                catch (FormatException nfe)
-                {
-                    HandleError(
-                            string.Format(CultureInfo.InvariantCulture, "The setter on Job class {0} for property '{1}' expects a {2} but was given {3}", obj.GetType(), name, paramType, o), nfe);
-                }
-                catch (MethodAccessException)
-                {
-                    HandleError(string.Format(CultureInfo.InvariantCulture, "The setter on Job class {0} for property '{1}' expects a {2} but was given a {3}", obj.GetType(), name, paramType, o.GetType()));
-                }
-                catch (ArgumentException e)
-                {
-                    HandleError(
-                            string.Format(CultureInfo.InvariantCulture, "The setter on Job class {0} for property '{1}' expects a {2} but was given {3}", obj.GetType(), name, paramType, o.GetType()), e);
-                }
-                catch (UnauthorizedAccessException e)
-                {
-                    HandleError(
-                            string.Format(CultureInfo.InvariantCulture, "The setter on Job class {0} for property '{1}' could not be accessed.", obj.GetType(), name), e);
-                }
-                catch (TargetInvocationException e)
-                {
-                    HandleError(
-                            string.Format(CultureInfo.InvariantCulture, "The setter on Job class {0} for property '{1}' could not be accessed.", obj.GetType(), name), e);
-                }
-                catch (Exception e)
-                {
-                    HandleError(
-                            string.Format(CultureInfo.InvariantCulture, "The setter on Job class {0} for property '{1}' threw exception when processing.", obj.GetType(), name), e);
-                }
-            }
-        }
-        
-        private void HandleError(string message)
-        {
-            HandleError(message, null);
-        }
-
-        private void HandleError(string message, Exception e)
-        {
-            if (ThrowIfPropertyNotFound)
-            {
-                throw new SchedulerException(message, e);
-            }
-
-            if (WarnIfPropertyNotFound)
-            {
-                if (e == null)
-                {
-                    _logger.Warn(message);
-                }
-                else
-                {
-                    _logger.Warn(message, e);
-                }
-            }
-        }
-
     }
 }
