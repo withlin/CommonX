@@ -18,6 +18,7 @@
     using CommonX.Quartz;
     using CommonX.Cache.Redis;
     using Quartz;
+    using System.Threading;
 
     public class RequestIntegrationEvent : IntegrationEvent
     {
@@ -50,16 +51,31 @@
         static void Main(string[] args)
         {
             Setup();
-            Console.WriteLine();
-            List<string> topics = new List<string>();
-            topics.Add("JTmdb_Fd_Good");
-            _consumerClient.Consume(topics, HandlerMessage);
 
 
-            _bus.Send("ServiceBus.TestPublish.NetCore", new RequestIntegrationEvent() { Message = "Masstransit test Succees!" });
-            _logger.Info("ServiceBus Logs test!!");
-            Console.WriteLine("Masstransit test Succees！");
+            var job = JobBuilder.Create<TestJob>().WithIdentity("test", "test-job").Build();
+            var trigger = TriggerBuilder.Create()
+                .WithIdentity("test", "test-job")
+                .StartNow()
+                .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(2)).Build();
+            var cts = new CancellationTokenSource();
+
+
+            _scheduler.ScheduleJob(job, trigger, cts.Token);
+
+            _scheduler.Start().Wait();
             Console.ReadKey();
+
+            //Console.WriteLine();
+            //List<string> topics = new List<string>();
+            //topics.Add("JTmdb_Fd_Good");
+            //_consumerClient.Consume(topics, HandlerMessage);
+
+
+            //_bus.Send("ServiceBus.TestPublish.NetCore", new RequestIntegrationEvent() { Message = "Masstransit test Succees!" });
+            //_logger.Info("ServiceBus Logs test!!");
+            //Console.WriteLine("Masstransit test Succees！");
+            //Console.ReadKey();
         }
 
         public static void Setup()
@@ -71,7 +87,7 @@
                 .UseLog4Net()
                 .UseJsonNet()
                 .UseKafka("");
-            config.UseQuartz(new Assembly[] { assambly });
+             config.UseQuartz(new Assembly[] { assambly });
             //.UseRabbitMQ("localhost","/","guest","guest")
             //.UseRedisCache()
             //.UseMassTransit(new Assembly[] { assambly })
@@ -84,7 +100,7 @@
                 //_conn = scope.Resolve<IConnectionPool>();
                 //factory = scope.Resolve<IConsumerClientFactory>();
                 _consumerClient = scope.Resolve<IKafkaPersisterConnection>();
-                //_scheduler =scope.Resolve<IScheduler>();
+                _scheduler = scope.Resolve<IScheduler>();
             }
         }
     }
