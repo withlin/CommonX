@@ -14,7 +14,7 @@ namespace CommonX.Quartz
 {
     public static class ConfigurationExtensions
     {
-        public static Configuration UseQuartz(this Configuration configuration, Assembly[] assembiles)
+        public static Configuration UseQuartz(this Configuration configuration, Assembly[] assembiles, NameValueCollection schedulerSetting=null)
         {
             LogManager.Adapter = new EntLibLoggerFactoryAdapter();
 
@@ -28,7 +28,7 @@ namespace CommonX.Quartz
                     { "quartz.scheduler.instanceName","QuartzScheduler"},
                     { "quartz.scheduler.instanceId","AUTO"},
                     { "quartz.threadPool.type", "Quartz.Simpl.SimpleThreadPool, Quartz"},
-                    { "quartz.threadPool.threadCount", "10"},
+                    { "quartz.threadPool.threadCount", "50"},
                     { "quartz.threadPool.threadPriority", "Normal"},
                     { "quartz.jobStore.type", "Quartz.Simpl.RAMJobStore, Quartz"}
                     //{ "quartz.plugin.jobInitializer.type", "Quartz.Plugin.Xml.XMLSchedulingDataProcessorPlugin, Quartz"},
@@ -50,19 +50,13 @@ namespace CommonX.Quartz
                 //}
 
                 builder.RegisterModule(new QuartzAutofacFactoryModule() {
-                    ConfigurationProvider=c=>schedulerConfig
+                    ConfigurationProvider=c=>schedulerConfig??schedulerSetting
                 });
                 builder.RegisterModule(new QuartzAutofacJobsModule(assembiles)
                 {
                     AutoWireProperties = true
                 });
-
-
                 builder.Update(container);
-
-
-                IScheduler scheduler = container.Resolve<IScheduler>();
-                scheduler.Start();
             }
             return configuration;
         }

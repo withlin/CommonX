@@ -19,7 +19,7 @@ namespace CommonX.Kafka
         }
         public int ConnectionPoolSize { get; set; } = 10;
         BrokerMetadata metadata = new BrokerMetadata(1, "10.3.87.33", 9092);
-        public string Servers { get; set; } = "10.3.87.33:9092,10.3.2.209:9092,10.3.87.211:9092";
+        public string Servers { get; set; } = "10.3.87.33:9092,10.3.87.209:9092,10.3.87.211:9092";
         public IEnumerable<KeyValuePair<string, object>> AsKafkaSetting()
         {
             if (_kafkaSetting == null)
