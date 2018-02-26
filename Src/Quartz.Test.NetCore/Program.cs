@@ -39,7 +39,7 @@ namespace Quartz.Test.NetCore
         }
         
 
-        public static void BootStrap()
+        static void BootStrap()
         {
             var assambly = Assembly.GetAssembly(typeof(Program));
             var config = Configuration.Create()

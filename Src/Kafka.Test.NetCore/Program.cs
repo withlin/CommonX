@@ -20,7 +20,7 @@ namespace Kafka.Test.NetCore
 
             //Kafka Consume Messages
             List<string> topics = new List<string>();
-            topics.Add("Test Topics");
+            topics.Add("Test-Topics");
 
             _consumerClient.Consume(topics, HandlerMessage);
 
@@ -46,7 +46,7 @@ namespace Kafka.Test.NetCore
                 .RegisterCommonComponents()
                 .UseLog4Net()
                 .UseJsonNet()
-                .UseKafka("Test GroupId");
+                .UseKafka("Test-GroupId");
 
 
             using (var scope = ObjectContainer.Current.BeginLifetimeScope())

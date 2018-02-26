@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMq.Test.NetCore", "Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka.Test.NetCore", "Kafka.Test.NetCore\Kafka.Test.NetCore.csproj", "{A74509B2-A652-44EE-B677-E3A896EAB162}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.ESB.Test.NetCore", "MassTransit.ESB.Test.NetCore\MassTransit.ESB.Test.NetCore.csproj", "{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CommonX.DataAccess.EF.Shared\ECommon.DataAccess.EF.Shared.projitems*{bf75152f-1e07-4fbd-be4a-0f5f5abfbb6f}*SharedItemsImports = 13
@@ -206,6 +208,10 @@ Global
 		{A74509B2-A652-44EE-B677-E3A896EAB162}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A74509B2-A652-44EE-B677-E3A896EAB162}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A74509B2-A652-44EE-B677-E3A896EAB162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -219,6 +225,7 @@ Global
 		{E69D13DA-3B5A-45A9-B07C-6FED54F77071} = {6D5C13DE-3705-484C-9917-31E8275D0772}
 		{8C56A399-4BB3-4B5B-9E95-32837B05B1CB} = {6D5C13DE-3705-484C-9917-31E8275D0772}
 		{A74509B2-A652-44EE-B677-E3A896EAB162} = {6D5C13DE-3705-484C-9917-31E8275D0772}
+		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135} = {6D5C13DE-3705-484C-9917-31E8275D0772}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B83BD4E2-D0F8-4502-99D1-707EF284C97C}
