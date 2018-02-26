@@ -32,7 +32,7 @@ namespace Quartz.Test.NetCore
 
             _scheduler.Start().Wait();
 
-            Console.WriteLine("schedulejob is startting");
+            Console.WriteLine("schedulejob is starting");
             Console.ReadKey();
             
 

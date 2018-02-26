@@ -116,7 +116,7 @@ namespace CommonX.Autofac
 
         /// <summary>
         ///     Register a implementer type as a service implementation.
-        /// </summary>
+        /// </summary> 
         /// <typeparam name="TService">The service type.</typeparam>
         /// <typeparam name="TImplementer">The implementer type.</typeparam>
         /// <param name="life">The life cycle of the implementer type.</param>

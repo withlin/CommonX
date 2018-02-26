@@ -53,37 +53,7 @@
             Setup();
 
 
-            var job = JobBuilder.Create<TestJob1>().WithIdentity("test", "test-job").Build();
-            //var job1 = JobBuilder.Create<TestJob1>().WithIdentity("test1", "test-job1").Build();
-            //var job2 = JobBuilder.Create<TestJob2>().WithIdentity("test2", "test-job2").Build();
-            //var job3 = JobBuilder.Create<TestJob3>().WithIdentity("test3", "test-job3").Build();
-            var trigger = TriggerBuilder.Create()
-                .WithIdentity("test", "test-job")
-                .StartNow()
-                .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(2)).Build();
-            //var trigger1 = TriggerBuilder.Create()
-            //    .WithIdentity("test1", "test-job")
-            //    .StartNow()
-            //    .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(2)).Build();
-            //var trigger2 = TriggerBuilder.Create()
-            //    .WithIdentity("test2", "test-job")
-            //    .StartNow()
-            //    .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(2)).Build();
-            //var trigger3 = TriggerBuilder.Create()
-            //    .WithIdentity("test3", "test-job")
-            //    .StartNow()
-            //    .WithSchedule(SimpleScheduleBuilder.RepeatSecondlyForever(2)).Build();
-
-            var cts = new CancellationTokenSource();
-
-
-            _scheduler.ScheduleJob(job, trigger, cts.Token);
-            //_scheduler.ScheduleJob(job1, trigger1, cts.Token);
-            //_scheduler.ScheduleJob(job2, trigger2, cts.Token);
-            //_scheduler.ScheduleJob(job3, trigger3, cts.Token);
-
-            _scheduler.Start().Wait();
-            Console.ReadKey();
+            
 
             //Console.WriteLine();
             //List<string> topics = new List<string>();
