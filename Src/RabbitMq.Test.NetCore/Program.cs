@@ -22,7 +22,7 @@ namespace RabbitMq.Test.NetCore
         static void Main(string[] args)
         {
             //Pubilsh
-            _rabbitMQPersistentConnection.Publish(new RequestIntegrationEvent() { Message = "Publish Test" }, "testExchangeName", "testQueue", "testRoukey");
+            _rabbitMQPersistentConnection.Publish(new RequestIntegrationEvent() { Message = "Publish Test" }, "testExchangeName", "TestQueueName", "testRoukey");
 
 
             //Subscribe

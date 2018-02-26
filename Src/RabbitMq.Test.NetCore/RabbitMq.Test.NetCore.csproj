@@ -5,4 +5,16 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonX.Autofac\CommonX.Autofac.csproj" />
+    <ProjectReference Include="..\CommonX.JsonNet\CommonX.JsonNet.csproj" />
+    <ProjectReference Include="..\CommonX.Log4Net\CommonX.Log4Net.csproj" />
+    <ProjectReference Include="..\CommonX.RabbitMQ\CommonX.RabbitMQ.csproj" />
+    <ProjectReference Include="..\CommonX\CommonX.csproj" />
+  </ItemGroup>
+
 </Project>
