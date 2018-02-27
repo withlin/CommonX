@@ -51,7 +51,7 @@ namespace ESB.Test.NetCore
 
             using (var scope = ObjectContainer.Current.BeginLifetimeScope())
             {
-                _bus = scope.Resolve<IBus>();
+                _bus = scope.Resolve<CommonX.ServiceBus.IBus>();
             }
         }
     }

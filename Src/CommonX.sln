@@ -73,7 +73,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMq.Test.NetCore", "Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka.Test.NetCore", "Kafka.Test.NetCore\Kafka.Test.NetCore.csproj", "{A74509B2-A652-44EE-B677-E3A896EAB162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.ESB.Test.NetCore", "MassTransit.ESB.Test.NetCore\MassTransit.ESB.Test.NetCore.csproj", "{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Test.NetCore", "MassTransit.ESB.Test.NetCore\ESB.Test.NetCore.csproj", "{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

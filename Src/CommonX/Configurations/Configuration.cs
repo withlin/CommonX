@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using CommonX.Cache;
-using CommonX.Cache.Configuration;
 using CommonX.Cache.Impl;
 using CommonX.Components;
 using CommonX.IO;
 using CommonX.Logging;
-using CommonX.Scheduling;
 using CommonX.Serializing;
 using CommonX.ServiceBus;
-using CommonX.Socketing.Framing;
 using CommonX.Utilities;
 using CommonX.Utilities.AssenblyScanner;
 
@@ -70,7 +67,7 @@ namespace CommonX.Configurations
             ObjectContainer.Current.RegisterGeneric(typeof(IRequestClient<,>), typeof(EmptyRequestClient<,>));
             SetDefault<IOHelper, IOHelper>();
 
-            //缓存配置默认为JZTERP.Frameworks.Common.Cache.Configuration.CacheConfiguration,JZTERP.Frameworks.Common
+            //缓存配置默认为
             SetDefault<ICacheConfiguration, Cache.Configuration.CacheConfiguration>();
             return this;
         }
