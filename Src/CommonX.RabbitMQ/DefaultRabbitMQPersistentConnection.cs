@@ -164,7 +164,11 @@ namespace CommonX.RabbitMQ
                     channel.ExchangeDeclare(exchangeName, strExchangeType);
                 }
 
-
+                if (!string.IsNullOrEmpty(exchangeName))
+                {
+                    channel.ExchangeDeclare(exchange: exchangeName,
+                                    type: "direct");
+                }
 
                 channel.QueueDeclare(queue: queueName,
                    durable: durableQueue,
@@ -178,7 +182,7 @@ namespace CommonX.RabbitMQ
                 var data = _jsonSerializer.Serialize(info);
                 var body = Encoding.UTF8.GetBytes(data);
 
-                channel.BasicPublish(exchange: exchangeName,
+                channel.BasicPublish(exchange:exchangeName,
                      routingKey: routkey,
                      basicProperties: properties,
                       body: body);

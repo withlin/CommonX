@@ -21,12 +21,14 @@ namespace RabbitMq.Test.NetCore
         [NotNull] static IRabbitMQPersistentConnection _rabbitMQPersistentConnection;
         static void Main(string[] args)
         {
+            BootStrap();
+
             //Pubilsh
-            _rabbitMQPersistentConnection.Publish(new RequestIntegrationEvent() { Message = "Publish Test" }, "testExchangeName", "TestQueueName", "testRoukey");
+            _rabbitMQPersistentConnection.Publish(new RequestIntegrationEvent() { Message = "hello" }, "", "hello", "hello");
 
-
+            
             //Subscribe
-            _rabbitMQPersistentConnection.Subscribe("TestQueueName", HandleMessages);
+            _rabbitMQPersistentConnection.Subscribe("hello", HandleMessages);
 
 
         }
@@ -46,7 +48,7 @@ namespace RabbitMq.Test.NetCore
                 .RegisterCommonComponents()
                 .UseLog4Net()
                 .UseJsonNet()
-                .UseRabbitMQ("localhost", "/", "guest", "guest");
+                .UseRabbitMQ("10.3.80.42", "/hr", "admin", "admin");
 
 
             using (var scope = ObjectContainer.Current.BeginLifetimeScope())
