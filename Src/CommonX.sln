@@ -69,11 +69,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{6D5C13
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quartz.Test.NetCore", "Quartz.Test.NetCore\Quartz.Test.NetCore.csproj", "{E69D13DA-3B5A-45A9-B07C-6FED54F77071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMq.Test.NetCore", "RabbitMq.Test.NetCore\RabbitMq.Test.NetCore.csproj", "{8C56A399-4BB3-4B5B-9E95-32837B05B1CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMq.Test.NetCore", "RabbitMq.Test.NetCore\RabbitMq.Test.NetCore.csproj", "{8C56A399-4BB3-4B5B-9E95-32837B05B1CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka.Test.NetCore", "Kafka.Test.NetCore\Kafka.Test.NetCore.csproj", "{A74509B2-A652-44EE-B677-E3A896EAB162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kafka.Test.NetCore", "Kafka.Test.NetCore\Kafka.Test.NetCore.csproj", "{A74509B2-A652-44EE-B677-E3A896EAB162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Test.NetCore", "MassTransit.ESB.Test.NetCore\ESB.Test.NetCore.csproj", "{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESB.Test.NetCore", "MassTransit.ESB.Test.NetCore\ESB.Test.NetCore.csproj", "{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonX.Hangfire", "CommonX.Hangfire\CommonX.Hangfire.csproj", "{AC83D7B6-259B-4390-8075-EBFCA2C36086}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -212,6 +214,10 @@ Global
 		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EE3FE3C-F9E5-4F2B-8A39-B3FAAFFB7135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC83D7B6-259B-4390-8075-EBFCA2C36086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC83D7B6-259B-4390-8075-EBFCA2C36086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC83D7B6-259B-4390-8075-EBFCA2C36086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC83D7B6-259B-4390-8075-EBFCA2C36086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

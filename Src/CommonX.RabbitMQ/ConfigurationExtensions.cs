@@ -6,26 +6,31 @@ namespace CommonX.RabbitMQ
     using CommonX.Logging;
     using CommonX.Serializing;
     using global::RabbitMQ.Client;
+    using System;
+    using System.Linq.Expressions;
 
     public static class ConfigurationExtensions
     {
-        public static Configuration UseRabbitMQ(this Configuration configuration,string hostName,string virtualHost,string userName,string passWord, int port =5672)
+        public static Configuration UseRabbitMQ(this Configuration configuration, Action<Setting> rabbitmqSetting)
         {
 
             using (var scope = ObjectContainer.BeginLifetimeScope())
             {
                 var logger = scope.Resolve<ILoggerFactory>();
                 var jsonSerializer = scope.Resolve<IJsonSerializer>();
+                var setting = new Setting();
+                rabbitmqSetting(setting);
 
                 var factory = new ConnectionFactory()
                 {
-                    HostName = hostName??"localhost",
-                    Port = port,
-                    VirtualHost =virtualHost??"/",
-                    UserName = userName??"guest",
-                    Password = passWord??"guest",
-                    AutomaticRecoveryEnabled = true,
-                    RequestedConnectionTimeout = 15000
+
+                    HostName = setting.HostName,
+                    Port = setting.Port,
+                    VirtualHost = setting.VirtualHost,
+                    UserName = setting.UserName,
+                    Password = setting.Password,
+                    AutomaticRecoveryEnabled = setting.AutomaticRecoveryEnabled,
+                    RequestedConnectionTimeout = setting.RequestedConnectionTimeout
                 };
                 DefaultRabbitMQPersistentConnection conn = new DefaultRabbitMQPersistentConnection(factory, logger, jsonSerializer);
 

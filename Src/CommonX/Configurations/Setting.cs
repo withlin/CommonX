@@ -242,6 +242,18 @@ namespace CommonX.Configurations
         /// </summary>
         public bool EnableChangeNotify { get; set; } = false;
 
+        /// <summary>
+        /// RabbitMQ配置
+        /// </summary>
+        public string HostName { get; set; } = "localhost";
+        public int Port { get; set; } = 5607;
+        public string VirtualHost { get; set; } = "/";
+        public string UserName { get; set; } = "guest";
+        public string Password { get; set; } = "guest";
+        public bool AutomaticRecoveryEnabled { get; set; } = true;
+        public int RequestedConnectionTimeout { get; set; } = 15000;
+
+
         #region public method
         public string ConfigServerIP
         {

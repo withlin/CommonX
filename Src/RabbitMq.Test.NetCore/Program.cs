@@ -42,13 +42,29 @@ namespace RabbitMq.Test.NetCore
 
         static void BootStrap()
         {
+            //HostName = setting.HostName,
+            //        Port = setting.Port,
+            //        VirtualHost = setting.VirtualHost,
+            //        UserName = setting.UserName,
+            //        Password = setting.Password,
+            //        AutomaticRecoveryEnabled = setting.AutomaticRecoveryEnabled,
+            //        RequestedConnectionTimeout = setting.RequestedConnectionTimeout
             var assambly = Assembly.GetAssembly(typeof(Program));
             var config = Configuration.Create()
                 .UseAutofac()
                 .RegisterCommonComponents()
                 .UseLog4Net()
                 .UseJsonNet()
-                .UseRabbitMQ("10.3.80.42", "/hr", "admin", "admin");
+                .UseRabbitMQ(x=> 
+                {
+                    x.HostName = "10.3.80.42";
+                    x.Port = 5067;
+                    x.VirtualHost = "/hr";
+                    x.UserName = "admin";
+                    x.Password = "admin";
+                    x.AutomaticRecoveryEnabled = true;
+                    x.RequestedConnectionTimeout = 20000;
+                });
 
 
             using (var scope = ObjectContainer.Current.BeginLifetimeScope())

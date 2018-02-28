@@ -35,15 +35,27 @@
             await Task.FromResult(0);
         }
     }
+    public class Accout
+    {
+        public string UserName { get; set; }
+        public string PassWord { get; set; }
+    }
 
     class Program
     {
+
         private static IBus _bus;
         private static ILogger _logger;
         private static IConnectionPool _conn;
         private static IConsumerClientFactory factory;
         private static IKafkaPersisterConnection _consumerClient;
         private static IScheduler _scheduler;
+
+        public static Accout Test(Action<Accout> setting)
+        {
+            Accout accout = new Accout();
+            return accout;
+        }
         private static void HandlerMessage(Message<string, string> msg)
         {
             Console.WriteLine($"消息的值为{msg.Value}");
@@ -53,7 +65,7 @@
             Setup();
 
 
-
+            Test(c=> { c.UserName = "guest"; c.PassWord = "guest"; });
 
             //Console.WriteLine();
             //List<string> topics = new List<string>();
