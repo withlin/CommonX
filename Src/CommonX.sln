@@ -71,6 +71,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonX.Hangfire", "CommonX
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonX.WebApi.SignalR", "CommonX.WebApi.SingalR\CommonX.WebApi.SignalR.csproj", "{C9307A3E-8768-449D-9CB3-F003FD4F930F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonX.Mapster", "CommonX.Mapster\CommonX.Mapster.csproj", "{E2E16070-7650-4740-9CB4-698576189278}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CommonX.DataAccess.EF.Shared\ECommon.DataAccess.EF.Shared.projitems*{bf75152f-1e07-4fbd-be4a-0f5f5abfbb6f}*SharedItemsImports = 13
@@ -204,6 +206,10 @@ Global
 		{C9307A3E-8768-449D-9CB3-F003FD4F930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9307A3E-8768-449D-9CB3-F003FD4F930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9307A3E-8768-449D-9CB3-F003FD4F930F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2E16070-7650-4740-9CB4-698576189278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E16070-7650-4740-9CB4-698576189278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E16070-7650-4740-9CB4-698576189278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E16070-7650-4740-9CB4-698576189278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
