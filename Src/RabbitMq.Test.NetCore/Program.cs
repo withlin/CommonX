@@ -42,13 +42,6 @@ namespace RabbitMq.Test.NetCore
 
         static void BootStrap()
         {
-            //HostName = setting.HostName,
-            //        Port = setting.Port,
-            //        VirtualHost = setting.VirtualHost,
-            //        UserName = setting.UserName,
-            //        Password = setting.Password,
-            //        AutomaticRecoveryEnabled = setting.AutomaticRecoveryEnabled,
-            //        RequestedConnectionTimeout = setting.RequestedConnectionTimeout
             var assambly = Assembly.GetAssembly(typeof(Program));
             var config = Configuration.Create()
                 .UseAutofac()

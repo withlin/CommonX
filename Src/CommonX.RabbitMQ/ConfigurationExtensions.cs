@@ -11,7 +11,7 @@ namespace CommonX.RabbitMQ
 
     public static class ConfigurationExtensions
     {
-        public static Configuration UseRabbitMQ(this Configuration configuration, Action<Setting> rabbitmqSetting)
+        public static Configuration UseRabbitMQ(this Configuration configuration, Action<Setting> rabbitmqSetting=null)
         {
 
             using (var scope = ObjectContainer.BeginLifetimeScope())
