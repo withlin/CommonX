@@ -7,7 +7,7 @@ using CommonX.Configurations;
 
 #endregion
 
-namespace CommonX.WebApi.SingalR.Configurations
+namespace CommonX.WebApi.SignalR.Configurations
 {
     /// <summary>
     ///     Configuration class for framework.

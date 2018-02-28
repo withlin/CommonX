@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CommonX.WebApi.SingalR
+namespace CommonX.WebApi.SignalR
 {
     public abstract class BaseHub<T> : Hub<T> where T : class
     {

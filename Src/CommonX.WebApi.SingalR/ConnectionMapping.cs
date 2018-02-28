@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CommonX.WebApi.SingalR
+namespace CommonX.WebApi.SignalR
 {
     public class ConnectionMapping<T>
     {
