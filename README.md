@@ -74,7 +74,16 @@ namespace ServiceBus.TestPublish.NetCore
                 .UseLog4Net()
                 .UseJsonNet()
                 .UseQuartz(new Assembly[] { assambly })
-                .UseRabbitMQ("localhost","/","guest","guest")
+                .UseRabbitMQ(x=> 
+                {
+                    x.HostName = "localhost";
+                    x.Port = 5067;
+                    x.VirtualHost = "/";
+                    x.UserName = "guest";
+                    x.Password = "guest";
+                    x.AutomaticRecoveryEnabled = true;
+                    x.RequestedConnectionTimeout = 20000;
+                })
                 .UseRedisCache()
                 .UseMassTransit(new Assembly[] { assambly })
                 .UseKafka("");
