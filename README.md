@@ -1,4 +1,4 @@
-# CommonX（呆完善）
+# CommonX
 
 ## Getting Started
 ```C#
